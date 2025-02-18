@@ -291,20 +291,20 @@
                         </div>
 
                         <br />
-                      <p><a id="rq_slfi_toggle">Select this link to visit the RQ SLFI version of this page</a></p>
+                      <p><a id="rq_slfi_toggle" href="#">Select this link to visit the RQ SLFI version of this page</a></p>
 <script>
 function toggleRadio() {
-if (document.getElementId("rq_slfi").classList.contains("wb-inv") === true) {
-  document.getElementId("rq_slfi").classList.remove("wb-inv")
-  document.getElementId("basic").classList.add("wb-inv")
-  document.getElementId("rq_slfi_toggle").innerHTML = "Select this link to go back to the basic version of this page";
+if (document.getElementById("rq_slfi").classList.contains("wb-inv") === true) {
+  document.getElementById("rq_slfi").classList.remove("wb-inv")
+  document.getElementById("basic").classList.add("wb-inv")
+  document.getElementById("rq_slfi_toggle").innerHTML = "Select this link to go back to the basic version of this page";
 } else {
-  document.getElementId("rq_slfi").classList.add("wb-inv")
-  document.getElementId("basic").classList.remove("wb-inv")
-  document.getElementId("rq_slfi_toggle").innerHTML = "Select this link to visit the RQ SLFI version of this page";
+  document.getElementById("rq_slfi").classList.add("wb-inv")
+  document.getElementById("basic").classList.remove("wb-inv")
+  document.getElementById("rq_slfi_toggle").innerHTML = "Select this link to visit the RQ SLFI version of this page";
 }
 }
-document.getElementId("rq_slfi_toggle").addEventListener("click", toggleRadio, false);    
+document.getElementById("rq_slfi_toggle").addEventListener("click", toggleRadio, false);    
 </script>
 <h2>Confirmation of receipt</h2>
 
