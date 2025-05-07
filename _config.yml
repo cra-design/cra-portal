@@ -60,5 +60,5 @@ defaults:
         - https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/m%C3%A9li-m%C3%A9lo/2024-09-kejimkujik.css
         - https://cra-design.github.io/cra-portal/templates/css/custom.css        
       script: 
-        - https://www.canada.ca/etc/designs/canada/wet-boew/js/ep-pp.min.js
         - https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/m%C3%A9li-m%C3%A9lo/2024-09-kejimkujik.js
+        - https://cra-design.github.io/gst-hst-business/templates/scripts/external-link-detour.js
