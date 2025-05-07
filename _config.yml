@@ -23,8 +23,9 @@ creator:
 
 # Custom settings
 developerOptions: false
+devOptionsLocStore: "gitCRATemplateDevOptions"
 exitByURL: false
-exitPage: "/cra-portal/exit-intent.html"
+exitPage: "/cra-portal/exit.html"
 externalOrigin: "https://www.canada.ca"
 relativeExternalLinks: false
 testBanner: true
