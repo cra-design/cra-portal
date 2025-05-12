@@ -27,6 +27,7 @@ devOptionsLocStore: "gitCRATemplateDevOptions"
 exitByURL: false
 exitPage: "/cra-portal/exit.html"
 externalOrigin: "https://www.canada.ca"
+modifiedLinkList: "/templates/data/exclude-redirect.json"
 relativeExternalLinks: false
 testBanner: true
 
