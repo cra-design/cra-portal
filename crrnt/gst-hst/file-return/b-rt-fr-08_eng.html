@@ -178,7 +178,7 @@
 <main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">
 
 
-<div>
+<div class="wb-frmvld">
 
 <h1 id="wb-cont" property="name">GST/HST return for registrants</h1>
 
@@ -219,15 +219,15 @@ to review your return.
 	
  
 <div class="mrgn-tp-lg form-group">    
-    <label class="" for="line-id-101">
+    <label class="required" for="line-id-101">
         
         
         
-        	<span style="font-family:'Noto Sans Bold Italic', 'Noto Sans Regular', 'Noto Sans', sans-serif;font-style:italic;color:#D3080C;">*</span> 101 - Sales and other revenue <span style="font-family:'Noto Sans Bold Italic', 'Noto Sans Regular', 'Noto Sans', sans-serif;font-style:italic;color:#D3080C;">(required)</span>      
+        	<span class="field-name">101 - Sales and other revenue <span class="wb-inv">Enter dollars and cents, separated by a decimal point.</span>
+</span> <strong class="required">(required)</strong>      
         
         
         
-        <span class="wb-inv">Enter dollars and cents, separated by a decimal point.</span>
     </label>
     
 	<div class="input-group">
@@ -236,7 +236,7 @@ to review your return.
     <span class="input-group-addon input-currency">$</span>
 
 
-<input type="text" name="salesAndOtherRevenue.amount" size="20" maxlength="17" value="" id="line-id-101" class="form-control text-right">
+<input required="required" type="text" name="salesAndOtherRevenue.amount" size="20" maxlength="17" value="" id="line-id-101" class="form-control text-right">
 
 
 

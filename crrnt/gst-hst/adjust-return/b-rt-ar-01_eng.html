@@ -177,7 +177,6 @@
         <div class="row">
             <main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">
                 <div>
-                    <form name="form2">
                         <h1 id="wb-cont" property="name">Adjust a return</h1>
 
                         <div class="mrgn-bttm-md">
@@ -200,20 +199,20 @@
                                 </dd>
                             </dl>
                         </div>
-
+<div class="wb-frmvld">
+                        <form name="navURL" action="#" method="post">
                         <!-- Available dates -->
                         <div class="form-group mrgn-tp-md">
-                            <label for="dateSelected" class="required">Select the period end date of the return you want to adjust
-                                <strong class="required"><strong>&nbsp;(required)</strong> </strong>
+                            <label for="dateSelected" class="required"><span class="field-name">Select the period end date of the return you want to adjust</span>
+                                <strong class="required">&nbsp;(required)</strong>
                                 <a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account/adjust-a-return.html#lgblty" target="helpWindow" title="Help - Opens in a new window - Eligible returns"><span class="glyphicon glyphicon-question-sign"></span></a></label><br />
                             <span>(if the period you want to adjust is not listed, select the help icon for more information)</span>
 
-                            <select name="eligibilityDTO.selectedEligibleEndDate" onchange="TurnOnOrOff(this.selectedIndex)" id="dateSelected" class="form-control mrgn-tp-sm">
+                            <select name="eligibilityDTO.selectedEligibleEndDate" onchange="TurnOnOrOff(this.selectedIndex)" id="dateSelected" class="form-control mrgn-tp-sm" required="required">
                                 <option value="Select">Select</option>
                                 <option value="2013-01-01">2013-01-01</option>
                             </select>
                         </div>
-                        <form name="navURL" action="#" method="post">
                             <div class="form-group mrgn-tp-lg">
                                 <label for="dateSelected">
                                     Select Schedule A and/or Schedule B below if you did not file the schedule with your original return and you want to add it as part of your adjustment request. <a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account/adjust-a-return.html#ddsc" target="helpWindow" title="Help - Opens in a new window - Adding a schedule"><span class="glyphicon glyphicon-question-sign"></span></a>
@@ -263,6 +262,7 @@
                             </div>
                             <p class="mrgn-tp-md">Please note that this service cannot be used to resolve a formal dispute. If you want to file a Notice of Objection you must complete Form GST159, <i>Notice of Objection (GST/HST)</i>.</p>
                         </form>
+                        </div>
                 </div>
 
 
