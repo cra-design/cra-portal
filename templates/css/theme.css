@@ -279,8 +279,8 @@ td,th {
 
 @font-face {
     font-family: "Glyphicons Halflings";
-    src: url(../../wet-boew/fonts/glyphicons-halflings-regular.eot);
-    src: url(../../wet-boew/fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"),url(../../wet-boew/fonts/glyphicons-halflings-regular.woff2) format("woff2"),url(../../wet-boew/fonts/glyphicons-halflings-regular.woff) format("woff"),url(../../wet-boew/fonts/glyphicons-halflings-regular.ttf) format("truetype"),url(../../wet-boew/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg")
+    src: url(https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.eot);
+    src: url(https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"),url(https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.woff2) format("woff2"),url(https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.woff) format("woff"),url(https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.ttf) format("truetype"),url(https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg")
 }
 
 .glyphicon {
@@ -10474,98 +10474,98 @@ ol.linenums li {
 }
 
 .shr-pg .blogger:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: 0 0;
     width: 32px;
     height: 32px
 }
 
 .shr-pg .diigo:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: -32px 0;
     width: 32px;
     height: 32px
 }
 
 .shr-pg .facebook:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: 0 -32px;
     width: 32px;
     height: 32px
 }
 
 .shr-pg .feed:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: -32px -32px;
     width: 32px;
     height: 32px
 }
 
 .shr-pg .gmail:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: -64px 0;
     width: 32px;
     height: 32px
 }
 
 .shr-pg .linkedin:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: -64px -32px;
     width: 32px;
     height: 32px
 }
 
 .shr-pg .myspace:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: 0 -64px;
     width: 32px;
     height: 32px
 }
 
 .shr-pg .pinterest:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: -32px -64px;
     width: 32px;
     height: 32px
 }
 
 .shr-pg .reddit:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: -64px -64px;
     width: 32px;
     height: 32px
 }
 
 .shr-pg .tinyurl:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: -96px 0;
     width: 32px;
     height: 32px
 }
 
 .shr-pg .tumblr:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: -96px -32px;
     width: 32px;
     height: 32px
 }
 
 .shr-pg .twitter:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: -96px -64px;
     width: 32px;
     height: 32px
 }
 
 .shr-pg .whatsapp:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: 0 -96px;
     width: 32px;
     height: 32px
 }
 
 .shr-pg .yahoomail:before {
-    background-image: url(../../wet-boew/assets/sprites_share.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/sprites_share.png);
     background-position: -32px -96px;
     width: 32px;
     height: 32px
@@ -12078,7 +12078,7 @@ ol-geolocate button {
     animation-name: spin;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
-    background: url(../../wet-boew/assets/loading.png) center center no-repeat;
+    background: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/loading.png) center center no-repeat;
     background-size: 30px 30px;
     z-index: 2
 }
@@ -13079,7 +13079,7 @@ aside.features .thumbnail img {
 }
 
 .home .home-your-gov {
-    background-image: url(https://www.canada.ca/content/dam/canada/carousel/bkg-home-yourgov.jpg),url(../assets/bkg-home-yourgov.jpg);
+    background-image: url(https://www.canada.ca/content/dam/canada/carousel/bkg-home-yourgov.jpg),url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/bkg-home-yourgov.jpg);
     background-position: right center;
     background-repeat: no-repeat;
     background-size: 35%
@@ -13376,7 +13376,7 @@ header .brand img {
 }
 
 #hme-banner {
-    background-image: url(../assets/your-gov2.jpg);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/your-gov2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -13511,7 +13511,7 @@ input.btn.btn-call-to-action {
     font-family: gcweb;
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.eot),url(../fonts/gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.eot?#iefix) format("embedded-opentype"),url(../fonts/gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.woff) format("woff"),url(../fonts/gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.ttf) format("truetype"),url(../fonts/gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.svg#gcweb) format("svg")
+    src: url(https://www.canada.ca/etc/designs/canada/wet-boew/fonts/gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.eot),url(https://www.canada.ca/etc/designs/canada/wet-boew/fonts/gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.eot?#iefix) format("embedded-opentype"),url(https://www.canada.ca/etc/designs/canada/wet-boew/fonts/gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.woff) format("woff"),url(https://www.canada.ca/etc/designs/canada/wet-boew/fonts/gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.ttf) format("truetype"),url(https://www.canada.ca/etc/designs/canada/wet-boew/fonts/gcweb_0c4a4eb7974d0a7287c93c02965f9b3f.svg#gcweb) format("svg")
 }
 
 .cndwrdmrk:after,.cndwrdmrk:before,.icn-sig-en:before,.icn-sig-fr:before {
@@ -13623,7 +13623,7 @@ header .brand a {
 }
 
 #wb-info .landscape {
-    background: #26374a url(../assets/landscape.png) no-repeat right bottom
+    background: #26374a url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/landscape.png) no-repeat right bottom
 }
 
 #wb-info .landscape a {
@@ -14600,23 +14600,23 @@ a.shr-opn,a.shr-opn:hover {
 }
 
 .provisional.gc-followus .facebook::before {
-    background-image: url(../assets/gc-follow-us/facebook.svg)
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/gc-follow-us/facebook.svg)
 }
 
 .provisional.gc-followus .twitter::before {
-    background-image: url(../assets/gc-follow-us/twitter.svg)
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/gc-follow-us/twitter.svg)
 }
 
 .provisional.gc-followus .youtube::before {
-    background-image: url(../assets/gc-follow-us/youtube.svg)
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/gc-follow-us/youtube.svg)
 }
 
 .provisional.gc-followus .instagram::before {
-    background-image: url(../assets/gc-follow-us/instagram.svg)
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/gc-follow-us/instagram.svg)
 }
 
 .provisional.gc-followus .linkedin::before {
-    background-image: url(../assets/gc-follow-us/linkedin.svg)
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/gc-follow-us/linkedin.svg)
 }
 
 .shr-pg a {
@@ -15603,7 +15603,7 @@ table.dataTable.nws-tbl .label.label-success {
 }
 
 .experimental .bg-img-hdng,.provisional .bg-img-hdng {
-    background-image: url(../assets/x-blue-line.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/x-blue-line.png);
     background-position: right bottom;
     background-repeat: no-repeat;
     min-height: 60px;
@@ -16034,7 +16034,7 @@ table.dataTable.nws-tbl .label.label-success {
 }
 
 .wb-chtwzrd-bubble-wrap .bubble {
-    background: #fff url(../assets/wb-chtwzrd/default-avatar.png) center no-repeat;
+    background: #fff url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/wb-chtwzrd/default-avatar.png) center no-repeat;
     border-radius: 50%;
     bottom: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.45);
@@ -16209,7 +16209,7 @@ table.dataTable.nws-tbl .label.label-success {
 
 .wb-chtwzrd-container .avatar {
     background-color: #fff;
-    background-image: url(../assets/default-avatar.png);
+    background-image: url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/default-avatar.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 25px;
