@@ -222,51 +222,48 @@
                                         </strong>
                                     </legend>
 
-                                    <div class="radio" for="option1">
-                                        <label>
+                                    <div class="radio">
+                                        <label for="option1">
                                             <input id="option1" type="radio" name="gotoURL" value="https://chpjtp.axshare.com/b-rt-fr-01_eng.html?code=6491847585d204e02fc4cd1b5cae6792">Goods and Services Tax/Harmonized Sales Tax (GST/HST) Return for Registrants (GST34)<br>
                                         </label>
                                     </div>
-                                    <div class="radio" for="option2">
-                                        <label>
+                                    <div class="radio">
+                                        <label for="option2">
                                             <input id="option2" type="radio" name="gotoURL" value="/cra-portal/exit.html?uri=b-rt-fC-01_eng.html&pagetitle=Information%20on%20Claims%20Paid%20or%20Credited%20for%20Foreign%20Conventions%20(GST106)" data-rule-required="true">Information on Claims Paid or Credited for Foreign Conventions (GST106)
                                         </label>
                                     </div>
-                                    <div class="radio" for="option3">
-                                        <label>
+                                    <div class="radio">
+                                        <label for="option3">
                                             <input id="option3" type="radio" name="gotoURL" value="/cra-portal/exit.html?uri=b-rt-fr-08-rq_eng.html&pagetitle=Goods%20and%20Services%20Tax/Harmonized%20Sales%20Tax%20(GST/HST)%20and%20Qu%E9bec%20Sales%20Tax%20(QST)%20Return%20for%20Selected%20Listed%20Financial%20Institutions%20(RC7200)" data-rule-required="true">Goods and Services Tax/Harmonized Sales Tax (GST/HST) and Québec Sales Tax (QST) Return for Selected Listed Financial Institutions (RC7200)
                                         </label>
                                     </div>
                                 </fieldset>
 
-                        <p class="mrgn-tp-md">
-                            <a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/gst-hst-netfile/gst-hst-netfile-about-gst-hst-netfile.html#prvcy" rel="noopener noreferrer" target="_blank">Privacy notice statement</a>
-                        </p>
+                                <p class="mrgn-tp-md">
+                                    <a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/gst-hst-netfile/gst-hst-netfile-about-gst-hst-netfile.html#prvcy" rel="noopener noreferrer" target="_blank">Privacy notice statement</a>
+                                </p>
 
+                                <h2>Confirmation of receipt</h2>
+                                <p>After you successfully submit your return and any applicable rebates, you will receive a confirmation number. This confirmation number is your proof that the Canada Revenue Agency (CRA) has received your information. Print the page with your confirmation number and keep it with your records. <strong>Do not mail paper copies of returns or rebates that you have submitted electronically.</strong></p>
+                                <p class="mrgn-tp-md">After we've processed your return and any applicable rebates, we may have to contact you for more information, so keep all supporting documents for <strong>six years</strong>. This applies whether you file on paper or electronically.</p>
 
-                        <h2>Confirmation of receipt</h2>
-                        After you successfully submit your return and any applicable rebates, you will receive a confirmation number. This confirmation number is your proof that the Canada Revenue Agency (CRA) has received your information. Print the page with your confirmation number and keep it with your records. <strong>Do not mail paper copies of returns or rebates that you have submitted electronically.</strong>
-                        <p class="mrgn-tp-md">After we've processed your return and any applicable rebates, we may have to contact you for more information, so keep all supporting documents for <strong>six years</strong>. This applies whether you file on paper or electronically.</p>
+                                <h2>Non-responsibility</h2>
+                                <p>The CRA has taken all reasonable steps to ensure the security of this Web site. We have used sophisticated encryption technology and incorporated other procedures to protect your personal information at all times. However, the Internet is a public network and there is the remote possibility of data security violations. In the event of such occurrences, the CRA is not responsible for any damages you may experience as a result.</p>
+                                <br>
+                                <br>
 
-                        <h2>Non-responsibility</h2>
-                        The CRA has taken all reasonable steps to ensure the security of this Web site. We have used sophisticated encryption technology and incorporated other procedures to protect your personal information at all times. However, the Internet is a public network and there is the remote possibility of data security violations. In the event of such occurrences, the CRA is not responsible for any damages you may experience as a result.
-
-                        <br><br>
-
-
-                        <div id="buttonsLine">
-                            <a data-exit="false" class="btn btn-default" href="https://chpjtp.axshare.com/a-mba-08_eng.html" role="button">Return to homepage</a>&nbsp;
-                            <input name="button" id="nextBtn" type="button" class="btn btn-primary" data-exit="false" value="Next" />
+                                <div id="buttonsLine">
+                                    <a data-exit="false" class="btn btn-default" href="https://chpjtp.axshare.com/a-mba-08_eng.html" role="button">Return to homepage</a>&nbsp;
+                                    <input name="button" id="nextBtn" type="button" class="btn btn-primary" data-exit="false" value="Next" />
+                                </div>
+                                <script>
+                                    document.getElementById("nextBtn").addEventListener("click", function () {
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        radioURL(document.navURL.gotoURL);
+                                    });
+                                </script>
+                            </form>
                         </div>
-                        <script>
-                            document.getElementById("nextBtn").addEventListener("click", function () {
-                                $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-                                radioURL(document.navURL.gotoURL);
-                            });
-                        </script>
-                        </form>
-                        </div>
-
                     </div>
                 </div>
 
