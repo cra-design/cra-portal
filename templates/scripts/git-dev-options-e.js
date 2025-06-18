@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function initDevOpts() {
                     promotion: false, 
                     license_key: "gpl", 
                     setup: function (ed) {
-                        ed.on("init", function (e) {
+/*                        ed.on("init", function (e) {
                             pageOrigin = document.querySelector("main").innerHTML;
 
                             // Load modied page content if it exists from local Storage
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function initDevOpts() {
                             }
 
                             e.target.hide();
-                        })/*,
+                        }),*/
                         ed.on("input Change", function(e) {
                             if (e.originalEvent === undefined || ("command" in e.originalEvent === false && ("focusedEditor" in e.originalEvent === true && e.originalEvent.focusedEditor !== null)) || ("command" in e.originalEvent === true && e.originalEvent.command !== "mceVisualBlocks" && e.originalEvent.command !== "mceVisualChars")) {
                                 switch (document.querySelector("main").innerHTML) {
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function initDevOpts() {
                                         break;
                                 }
                             }
-                        });*/
+                        });
                     }, 
                     plugins: "accordion advlist anchor autolink autoresize charmap code codesample fullscreen help image importcss link lists media nonbreaking pagebreak quickbars searchreplace table visualblocks visualchars save", 
                     toolbar: "undo redo | searchreplace | blocks styles removeformat | bold code | bullist numlist table | link unlink anchor | outdent indent alignnone | hr nonbreaking charmap | visualblocks visualchars | help", 
