@@ -30,7 +30,6 @@ file-election
 file-return
 
 - https://cra-design.github.io/cra-portal/crrnt/gst-hst/file-return/b-rt-fr-00_eng.html
-- https://cra-design.github.io/cra-portal/crrnt/gst-hst/file-return/b-rt-fr-01_eng.html
 - https://cra-design.github.io/cra-portal/crrnt/gst-hst/file-return/b-rt-fr-08_eng.html
 - https://cra-design.github.io/cra-portal/crrnt/gst-hst/file-return/b-rt-fr-08r_eng.html
 - https://cra-design.github.io/cra-portal/crrnt/gst-hst/file-return/b-rt-fr-09_eng.html
