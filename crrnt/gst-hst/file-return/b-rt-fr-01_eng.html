@@ -221,7 +221,7 @@
 <div class="mrgn-bttm-md wb-frmvld">
 
     
-<form name="navURL" action="#" method="get">
+<form name="navURL" action="#" method="get" id="gsthstnetfileform">
                             <fieldset class="legend-brdr-bttm">
                                 <div>
                                     <label for="startdate" class="required"><span class="field-name">From</span><strong class="required">&nbsp;(required)</strong></label>
@@ -325,8 +325,16 @@
 
                             <div id="buttonsLine">
                                 <a class="btn btn-default" href="b-rt-fr-00_eng.html" role="button">Previous</a>
-                                <a class="btn btn-primary" href="b-rt-fr-08_eng.html" role="button" onclick="$( '.wb-frmvld' ).trigger( 'wb-init.wb-frmvld' );">Next</a>
+                                <a class="btn btn-primary" type="submit" href="b-rt-fr-08_eng.html" role="button">Next</a>
                             </div>
+                                <script>
+                                    $("#gsthstnetfileform").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
+
     </form>
 
         </div>

@@ -213,7 +213,7 @@
                     <div>
                         <div class="mrgn-bttm-md wb-frmvld">
 
-                            <form name="navURL" action="#" method="get" id="returnform">
+                            <form name="navURL" action="#" method="get" id="filereturnform">
                                 <fieldset class="chkbxrdio-grp">
                                     <legend class="required">
                                         <span class="field-name">Select a return</span>:
@@ -257,9 +257,11 @@
                                     <input name="button" id="nextBtn" type="submit" class="btn btn-primary" data-exit="false" value="Next" />
                                 </div>
                                 <script>
-                                    document.getElementById("nextBtn").addEventListener("click", function () {
+                                    $("#filereturnform").submit(function(e) { 
                                         $(".wb-frmvld").trigger("wb-init.wb-frmvld");
                                         radioURL(document.navURL.gotoURL);
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
                                     });
                                 </script>
                             </form>

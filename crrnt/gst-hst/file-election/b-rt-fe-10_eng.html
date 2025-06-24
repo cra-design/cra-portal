@@ -179,7 +179,7 @@
 
 
             <div class="wb-frmvld">
-                    <form name="navURL" action="#" method="get">
+                    <form name="navURL" action="#" method="get" id="election_GSTHST_reporting_period">
 
                     <h1 id="wb-cont" property="name">Election for GST/HST reporting period</h1>
                     <div class="mrgn-bttm-md">
@@ -293,6 +293,15 @@
                             <input name="button" type="submit" class="btn btn-primary"  onclick="$( '.wb-frmvld' ).trigger( 'wb-init.wb-frmvld' );radioURL(document.navURL.gotoURL);" value="Next" />
                           
                         </div>
+                                <script>
+                                    $("#election_GSTHST_reporting_period").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        radioURL(document.navURL.gotoURL);
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
+
                     </div>
                 <br>
 

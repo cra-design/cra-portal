@@ -213,7 +213,7 @@
                     <div class="form-group">
                         <div class="mrgn-bttm-md wb-frmvld">
 
-                            <form name="navURL" action="#" method="get">
+                            <form name="navURL" action="#" method="get" id="file_election">
                             <fieldset class="chkbxrdio-grp">
                             <legend for="Election" class="required">
                                 <span class="field-name">Select an option</span>:
@@ -307,9 +307,18 @@
                       
                         <div id="buttonsLine">
                             <a class="btn btn-default" href="http://www.axshare.com/a-mba-08_eng.html" role="button">Return to homepage</a>&nbsp;
-                            <input name="button" type="submit" class="btn btn-primary" onclick="$( '.wb-frmvld' ).trigger( 'wb-init.wb-frmvld' );radioURL(document.navURL.gotoURL);" value="Next" />
+                            <input name="button" type="submit" class="btn btn-primary" value="Next" />
                           
                         </div>
+                                <script>
+                                    $("#file_election").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        radioURL(document.navURL.gotoURL);
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
+
                     </div>
                 <br>
 

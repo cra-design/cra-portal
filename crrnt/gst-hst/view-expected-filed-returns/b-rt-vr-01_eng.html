@@ -179,7 +179,7 @@
 
 
 <div>
-<form name="form2">
+<form name="form2" method="get" id="form2">
 <h1 id="wb-cont" property="name">View expected and filed returns</h1>
 
 
@@ -312,9 +312,15 @@
 	
   <div class="mrgn-tp-lg">		
     <a data-exit="false" class="btn btn-primary" data href="https://chpjtp.axshare.com/a-mba-08_eng.html"> Previous</a>  <a class="btn btn-default"> Print</a>
+                                <script>
+                                    $("#form2").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
+</div>
 
-
-</div>	
 </form>
 
 	

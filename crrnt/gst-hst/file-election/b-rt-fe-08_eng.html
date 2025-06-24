@@ -179,7 +179,7 @@
 
 
             <div class="wb-frmvld">
-                    <form name="navURL" action="#" method="get">
+                    <form name="navURL" id="gsthst_Accounting_Periods" action="#" method="get">
 
                     <h1 id="wb-cont" property="name">Notification of GST/HST Accounting Periods</h1>
                     <div class="mrgn-bttm-md">
@@ -354,9 +354,18 @@
 
                         <div id="buttonsLine">
                             <a class="btn btn-default" href="b-rt-sp-01_eng.html" role="button">Previous</a>&nbsp;
-                            <input name="button" type="submit" class="btn btn-primary" href="#" value="Submit" onclick="$( '.wb-frmvld' ).trigger( 'wb-init.wb-frmvld' );" />
+                            <input name="button" type="submit" class="btn btn-primary" href="#" value="Submit" />
                           
                         </div>
+                                <script>
+                                    $("#gsthst_Accounting_Periods").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        radioURL(document.navURL.gotoURL);
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
+
                 <br>
 
 

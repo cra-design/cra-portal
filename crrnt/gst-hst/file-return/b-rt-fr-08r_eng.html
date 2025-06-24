@@ -833,27 +833,6 @@
 
 	</table>
 
-	
-	
-
-
-		
-	
-
-
-		
-	
-
-
-		
-	
-
-
-		
-	
-
-
-
 <div class="wb-frmvld">
 <form id="psbFdrlRbtRvwNpt" name="psbFdrlRbtRvwNpt" action="https://www.canada.ca/gol-ged/ghnf/myba/prot/psbFdrlRbtRvwNpt.action" method="get" autocomplete="off">
 	<input type="hidden" name="struts.token.name" value="token" />
@@ -912,8 +891,16 @@
 
 	<div class="mrgn-tp-lg">
    	<a class="btn btn-default" href="b-rt-fr-08_eng.html" role="button">Previous</a>&nbsp;
-       	<a class="btn btn-primary" href="b-rt-fr-09_eng.html" role="button" onclick="$( '.wb-frmvld' ).trigger( 'wb-init.wb-frmvld' );">Submit</a>
+       	<a class="btn btn-primary" type="submit" href="b-rt-fr-09_eng.html" role="button">Submit</a>
 	</div>
+                                <script>
+                                    $("#psbFdrlRbtRvwNpt").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
+
 </form>
 </div>
 <br>

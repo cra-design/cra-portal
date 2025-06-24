@@ -179,7 +179,7 @@
 
 
 <div>
-<form name="form2">
+<form name="form2" method="get" id="form2">
 <h1 id="wb-cont" property="name">Calculate and pay instalment payments - disclaimer</h1>
 
 <div>
@@ -219,7 +219,13 @@
 				&nbsp;&nbsp;
                 						<a data-exit="false" class="btn btn-default" href="https://chpjtp.axshare.com/a-mba-08_eng.html" role="button">I disagree</a>&nbsp;&nbsp;<a class="btn btn-primary" href="https://cra-design.github.io/cra-portal/exit.html" role="button">I agree</a>
 			</div>
-
+                                <script>
+                                    $("#adjust_return").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
 		</div>
         </div>
         </div>

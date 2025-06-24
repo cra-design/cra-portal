@@ -179,7 +179,7 @@
 
 
             <div>
-                <form name="form2">
+                <form name="form2" method="get" id="form2">
 
                     <h1 id="wb-cont" property="name">View elections</h1>
                     <div class="mrgn-bttm-md">
@@ -228,6 +228,13 @@
                                 <div id="buttonsLine">
                                     <a data-exit="false" class="btn btn-default" href="https://chpjtp.axshare.com/a-mba-08_eng.html" role="button">Return to homepage</a>
                                 </div>
+                                <script>
+                                    $("#form2").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
                             </form>
 
                         </div>

@@ -183,11 +183,6 @@
                     <h1 id="wb-cont" property="name">Election or revocation of an election to change a GST/HST fiscal year</h1>
                     <div class="mrgn-bttm-md">
 
-
-
-
-
-
                         <!-- BN9 and Legal Name -->
                         <dl class="dl-horizontal brdr-0 dl-horizontal-cra dl-horizontal-busInfo mrgn-tp-lg mrgn-bttm-0 dl-col-5">
                             <dt class="p-0">
@@ -212,7 +207,7 @@
 
 
 <div class="wb-frmvld">
-                            <form name="navURL" action="#" method="get">
+                            <form name="navURL" id="election_GSTHST_fiscal" action="#" method="get">
                     <div class="form-group">
                         <div class="mrgn-bttm-md">
                             <legend class="required">
@@ -254,6 +249,14 @@
                             <a class="btn btn-default" href="b-rt-sp-01_eng.html" role="button">Previous</a>&nbsp;
                             <input name="button" type="submit" class="btn btn-primary"  onclick="$( '.wb-frmvld' ).trigger( 'wb-init.wb-frmvld' );radioURL(document.navURL.gotoURL);" value="Next" />
                         </div>
+                                <script>
+                                    $("#election_GSTHST_fiscal").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        radioURL(document.navURL.gotoURL);
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
                     </div>
                 <br>
 

@@ -200,7 +200,7 @@
                             </dl>
                         </div>
 <div class="wb-frmvld">
-                        <form name="navURL" action="#" method="get">
+                        <form name="navURL" id="adjust_return" action="#" method="get">
                         <!-- Available dates -->
                         <div class="form-group mrgn-tp-md">
                             <label for="dateSelected" class="required"><span class="field-name">Select the period end date of the return you want to adjust</span>
@@ -256,6 +256,13 @@
                                 <a class="btn btn-primary" href="#" role="button" onclick="$( '.wb-frmvld' ).trigger( 'wb-init.wb-frmvld' );">Next</a>
                             </div>
                             <p class="mrgn-tp-md">Please note that this service cannot be used to resolve a formal dispute. If you want to file a Notice of Objection you must complete Form GST159, <i>Notice of Objection (GST/HST)</i>.</p>
+                                <script>
+                                    $("#adjust_return").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
                         </form>
                         </div>
                 </div>
