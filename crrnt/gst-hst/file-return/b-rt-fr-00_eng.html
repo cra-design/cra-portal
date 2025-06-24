@@ -256,14 +256,6 @@
                                     <a data-exit="false" class="btn btn-default" href="https://chpjtp.axshare.com/a-mba-08_eng.html" role="button">Return to homepage</a>&nbsp;
                                     <input name="button" id="nextBtn" type="submit" class="btn btn-primary" data-exit="false" value="Next" />
                                 </div>
-                                <script>
-                                    $("#filereturnform").submit(function(e) { 
-                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-                                        radioURL(document.navURL.gotoURL);
-                                        e.preventDefault(); // Cancel the submit
-                                        return false;
-                                    });
-                                </script>
                             </form>
                         </div>
                     </div>
@@ -383,5 +375,14 @@
         })();
 */
     </script>
+                                <script>
+                                    $("#filereturnform").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        radioURL(document.navURL.gotoURL);
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
+
 </body>
 </html>

@@ -893,13 +893,6 @@
    	<a class="btn btn-default" href="b-rt-fr-08_eng.html" role="button">Previous</a>&nbsp;
        	<a class="btn btn-primary" type="submit" href="b-rt-fr-09_eng.html" role="button">Submit</a>
 	</div>
-                                <script>
-                                    $("#psbFdrlRbtRvwNpt").submit(function(e) { 
-                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-                                        e.preventDefault(); // Cancel the submit
-                                        return false;
-                                    });
-                                </script>
 
 </form>
 </div>
@@ -1018,5 +1011,13 @@
         })();
 */
     </script>
+                                <script>
+                                    $("#psbFdrlRbtRvwNpt").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
+
 </body>
 </html>

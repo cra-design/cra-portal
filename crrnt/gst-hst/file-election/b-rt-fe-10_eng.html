@@ -293,14 +293,6 @@
                             <input name="button" type="submit" class="btn btn-primary"  onclick="$( '.wb-frmvld' ).trigger( 'wb-init.wb-frmvld' );radioURL(document.navURL.gotoURL);" value="Next" />
                           
                         </div>
-                                <script>
-                                    $("#election_GSTHST_reporting_period").submit(function(e) { 
-                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-                                        radioURL(document.navURL.gotoURL);
-                                        e.preventDefault(); // Cancel the submit
-                                        return false;
-                                    });
-                                </script>
 
                     </div>
                 <br>
@@ -421,6 +413,14 @@
         })();
 */
     </script>
+                                <script>
+                                    $("#election_GSTHST_reporting_period").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        radioURL(document.navURL.gotoURL);
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
     <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/wet-boew.min.js"></script>
 </body>
 </html>

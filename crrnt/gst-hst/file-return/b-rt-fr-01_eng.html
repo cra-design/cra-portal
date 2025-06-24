@@ -327,13 +327,6 @@
                                 <a class="btn btn-default" href="b-rt-fr-00_eng.html" role="button">Previous</a>
                                 <a class="btn btn-primary" type="submit" href="b-rt-fr-08_eng.html" role="button">Next</a>
                             </div>
-                                <script>
-                                    $("#gsthstnetfileform").submit(function(e) { 
-                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-                                        e.preventDefault(); // Cancel the submit
-                                        return false;
-                                    });
-                                </script>
 
     </form>
 
@@ -457,5 +450,13 @@
         })();
 */
     </script>
+                                <script>
+                                    $("#gsthstnetfileform").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
+
 </body>
 </html>

@@ -310,14 +310,6 @@
                             <input name="button" type="submit" class="btn btn-primary" value="Next" />
                           
                         </div>
-                                <script>
-                                    $("#file_election").submit(function(e) { 
-                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-                                        radioURL(document.navURL.gotoURL);
-                                        e.preventDefault(); // Cancel the submit
-                                        return false;
-                                    });
-                                </script>
 
                     </div>
                 <br>
@@ -452,5 +444,14 @@ if (document.getElementById("rq_slfi").classList.contains("wb-inv") === true) {
 }
 document.getElementById("rq_slfi_toggle").addEventListener("click", toggleRadio, false);    
     </script>
+                                <script>
+                                    $("#file_election").submit(function(e) { 
+                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        radioURL(document.navURL.gotoURL);
+                                        e.preventDefault(); // Cancel the submit
+                                        return false;
+                                    });
+                                </script>
+
 </body>
 </html>
