@@ -184,7 +184,7 @@
 
 
 
-<form id="eligibilityForm_filereturn" method="get" action="https://www.canada.ca/gol-ged/ghnf/myba/filereturn/prot/eligibilitySubmit.do" onsubmit="disableButtons();">
+<form id="eligibilityForm_filereturn" method="get" action="#">
 	<input type="hidden" name="page" value="100" />
 	<input type="hidden" name="whichButton" />
 	
@@ -213,32 +213,16 @@ to review your return.
 	<strong>Sales and other information</strong>
 </div>
 <fieldset>    
-
-		
-	
  
 <div class="mrgn-tp-lg form-group">    
     <label class="required" for="line-id-101">
-        
-        
-        
         	<span class="field-name">101 - Sales and other revenue <span class="wb-inv">Enter dollars and cents, separated by a decimal point.</span>
 </span> <strong class="required">(required)</strong>      
-        
-        
-        
     </label>
     
 	<div class="input-group">
-        
-      
     <span class="input-group-addon input-currency">$</span>
-
-
 <input required="required" type="text" name="salesAndOtherRevenue.amount" size="20" maxlength="17" value="" id="line-id-101" class="form-control text-right">
-
-
-
     </div>
 </div>
 
@@ -740,13 +724,13 @@ to review your return.
         })();
 */
     </script>
-                                <script>
-                                    $("#eligibilityForm_filereturn").submit(function(e) { 
-                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-                                        e.preventDefault(); // Cancel the submit
-                                        return false;
-                                    });
-                                </script>
-
+    <script>
+    $("#eligibilityForm_filereturn").submit(function(e) { 
+        disableButtons();
+        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+        e.preventDefault(); // Cancel the submit
+        return false;
+    });
+    </script>
 </body>
 </html>
