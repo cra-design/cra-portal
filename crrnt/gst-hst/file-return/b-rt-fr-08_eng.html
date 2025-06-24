@@ -729,10 +729,9 @@ to review your return.
     $("#eligibilityForm_filereturn").submit(function(e) { 
 //        disableButtons();
         $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-        if (document.getElementById("line-id-101").value === "") {
-            e.preventDefault(); // Cancel the submit
-            return false;
-        } else {
+        e.preventDefault(); // Cancel the submit
+        return false;
+        if (document.getElementById("line-id-101").value !== "") {
             gooto("https://cra-design.github.io/cra-portal/crrnt/gst-hst/file-return/b-rt-fr-08r_eng.html");
         }
     });
