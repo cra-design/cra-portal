@@ -176,97 +176,76 @@
 <div class="container">
     <div class="row">
         <main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">
-
-
             <div>
-                <form name="form2">
-                    <h1 id="wb-cont" property="name">Election or revocation of an election to change a GST/HST fiscal year</h1>
-                    <div class="mrgn-bttm-md">
+                <h1 id="wb-cont" property="name">Election or revocation of an election to change a GST/HST fiscal year</h1>
+                <div class="mrgn-bttm-md">
 
-                        <!-- BN9 and Legal Name -->
-                        <dl class="dl-horizontal brdr-0 dl-horizontal-cra dl-horizontal-busInfo mrgn-tp-lg mrgn-bttm-0 dl-col-5">
-                            <dt class="p-0">
-                                Business number:
-                            </dt>
-                            <dd class="p-0">
-                                <strong>123456789 RT0001</strong>
-                            </dd>
-                            <dt class="p-0">
-                                Business name:
-                            </dt>
-                            <dd class="p-0">
-                                <strong>
-                                    ABC Industies
-                                </strong>
-                            </dd>
-                        </dl>
-
-                    </div>
-
-                    <br>
-
-
-<div class="wb-frmvld">
-                            <form name="navURL" id="election_GSTHST_fiscal" action="#" method="get">
-                    <div class="form-group">
-                        <div class="mrgn-bttm-md">
-                            <legend class="required">
-                                <span class="field-name">Select an option</span>:
-
-
-                            <strong class="required" aria-hidden="true">
-                                (required)
+                    <!-- BN9 and Legal Name -->
+                    <dl class="dl-horizontal brdr-0 dl-horizontal-cra dl-horizontal-busInfo mrgn-tp-lg mrgn-bttm-0 dl-col-5">
+                        <dt class="p-0">
+                            Business number:
+                        </dt>
+                        <dd class="p-0">
+                            <strong>123456789 RT0001</strong>
+                        </dd>
+                        <dt class="p-0">
+                            Business name:
+                        </dt>
+                        <dd class="p-0">
+                            <strong>
+                                ABC Industries
                             </strong>
-                            </legend>
+                        </dd>
+                    </dl>
+                </div>
+                <br>
+                <div class="wb-frmvld">
+                    <form name="navURL" id="election_GSTHST_fiscal" action="#" method="get">
+                        <div class="form-group">
+                            <div class="mrgn-bttm-md">
+                                <legend class="required">
+                                    <span class="field-name">Select an option</span>:
+                                    <strong class="required" aria-hidden="true">
+                                        (required)
+                                    </strong>
+                                </legend>
+                            </div>
                         </div>
+                        <div>
+                            <div class="radio mrn-bttm-md">
+                                <label>
+                                    <input data-rule-required="true" type="radio" name="gotoURL" value="https://chpjtp.axshare.com/b-rt-fr-01_eng.html">Election to change a GST/HST fiscal year
+                                    <br>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input data-rule-required="true" type="radio" name="gotoURL" value="/cra-portal/exit.html?uri=b-rt-fc-01_eng.html">Revocation of an election to change a GST/HST fiscal year
+                                </label>
+                            </div>
                         </div>
-
-                                <div>
-
-
-                                    <div class="radio mrn-bttm-md">
-
-                                        <label>
-                                            <input data-rule-required="true" type="radio" name="gotoURL" value="https://chpjtp.axshare.com/b-rt-fr-01_eng.html">Election to change a GST/HST fiscal year<br>
-
-                                        </label>
-                                    </div>
-                                    <div class="radio">
-                                        <label>
-                                            <input data-rule-required="true" type="radio" name="gotoURL" value="/cra-portal/exit.html?uri=b-rt-fc-01_eng.html">Revocation of an election to change a GST/HST fiscal year
-                                        </label>
-                                    </div>
-
-
-                                </div>
-
-                            </form>
-
                         <br>
-
-
                         <div id="buttonsLine">
                             <a class="btn btn-default" href="b-rt-sp-01_eng.html" role="button">Previous</a>&nbsp;
-                            <input name="button" type="submit" class="btn btn-primary"  onclick="$( '.wb-frmvld' ).trigger( 'wb-init.wb-frmvld' );radioURL(document.navURL.gotoURL);" value="Next" />
+                            <input name="button" type="submit" class="btn btn-primary" value="Next" />
                         </div>
-                    </div>
+                    </form>
+                </div>
                 <br>
 
 
 
                 <dl class="dl-inline brdr-0">
-                        <dt>Screen ID:&nbsp;</dt>
-                        <dd> B-RT-FE-01 </dd>
-                    </dl>
-                    <!--<div class="clearfix hidden-print"></div>-->
-                    <dl id="wb-dtmd" property="dateModified">
-                        <dt>Date modified: </dt>
-                        <dd>
-                            <time>YYYY-MM-DD</time>
-                        </dd>
-                    </dl>
-                </form>
-
+                    <dt>Screen ID:&nbsp;</dt>
+                    <dd> B-RT-FE-01 </dd>
+                </dl>
+                <!--<div class="clearfix hidden-print"></div>-->
+                <dl id="wb-dtmd" property="dateModified">
+                    <dt>Date modified: </dt>
+                    <dd>
+                        <time>YYYY-MM-DD</time>
+                    </dd>
+                </dl>
             </div>
         </main>
 
@@ -368,13 +347,13 @@
         })();
 */
     </script>
-                                <script>
-                                    $("#election_GSTHST_fiscal").submit(function(e) { 
-                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-                                        radioURL(document.navURL.gotoURL);
-                                        e.preventDefault(); // Cancel the submit
-                                        return false;
-                                    });
-                                </script>
+    <script>
+        $("#election_GSTHST_fiscal").submit(function(e) { 
+            $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+            radioURL(document.navURL.gotoURL);
+            e.preventDefault(); // Cancel the submit
+            return false;
+        });
+    </script>
 </body>
 </html>
