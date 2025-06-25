@@ -201,33 +201,29 @@
                 <br>
                 <div class="wb-frmvld">
                     <form name="navURL" id="election_GSTHST_fiscal" action="#" method="get">
-                        <div class="form-group">
-                            <div class="mrgn-bttm-md">
-                                <legend class="required">
-                                    <span class="field-name">Select an option</span>:
-                                    <strong class="required" aria-hidden="true">
-                                        (required)
-                                    </strong>
-                                </legend>
-                            </div>
-                        </div>
-                        <div>
+                        <fieldset class="chkbxrdio-grp">
+                            <legend class="required">
+                                <span class="field-name">Select an option</span>:
+                                <strong class="required" aria-hidden="true">
+                                    (required)
+                                </strong>
+                            </legend>
                             <div class="radio mrn-bttm-md">
-                                <label>
-                                    <input data-rule-required="true" type="radio" name="gotoURL" value="https://chpjtp.axshare.com/b-rt-fr-01_eng.html">Election to change a GST/HST fiscal year
+                                <label for="option1">
+                                    <input id="option2" data-rule-required="true" type="radio" name="gotoURL" value="https://chpjtp.axshare.com/b-rt-fr-01_eng.html">Election to change a GST/HST fiscal year
                                     <br>
                                 </label>
                             </div>
                             <div class="radio">
-                                <label>
-                                    <input data-rule-required="true" type="radio" name="gotoURL" value="/cra-portal/exit.html?uri=b-rt-fc-01_eng.html">Revocation of an election to change a GST/HST fiscal year
+                                <label for="option2">
+                                    <input id="option2" data-rule-required="true" type="radio" name="gotoURL" value="/cra-portal/exit.html?uri=b-rt-fc-01_eng.html">Revocation of an election to change a GST/HST fiscal year
                                 </label>
                             </div>
-                        </div>
+                        </fieldset>
                         <br>
                         <div id="buttonsLine">
                             <a class="btn btn-default" href="b-rt-sp-01_eng.html" role="button">Previous</a>&nbsp;
-                            <input name="button" type="submit" class="btn btn-primary" value="Next" />
+                            <input name="button" type="submit" data-exit="false" class="btn btn-primary" value="Next" />
                         </div>
                     </form>
                 </div>
