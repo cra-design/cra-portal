@@ -476,10 +476,26 @@
 */
     </script>
     <script>
-        $("#gsthst_Accounting_Periods").submit(function(e) { 
+        $("#gsthst_Accounting_Periods").submit(function (e) {
+            let fromDate, toDate, 
+                fieldIdArr = ["from", "to", "Q1", "Q2", "Q3", "Q4", "M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9", "M10", "M11", "M12"], 
+                isfieldNotEmpty = false, 
+                checkfieldNotEmpty = function isfieldNotEmpty(elm) {
+                    return document.getElementById(elm).value !== "";
+                };
+
             $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-            // radioURL(document.navURL.gotoURL); // fe-08r
             e.preventDefault(); // Cancel the submit
+            isfieldNotEmpty = fieldIdArr.every(checkfieldNotEmpty);
+            if (document.getElementById("from").value !== "") {
+                fromDate = new Date(document.getElementById("from").value);
+            }
+            if (document.getElementById("to").value !== "") {
+                toDate = new Date(document.getElementById("to").value);
+            }
+            if (isfieldNotEmpty === true && fromDate <= toDate) {
+                gooto("b-rt-fe-08r_eng.html");
+            }
             return false;
         });
     </script>
