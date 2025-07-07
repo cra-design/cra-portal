@@ -185,12 +185,6 @@
     	-&nbsp;review
     
 </h1>
-<div class="wb-frmvld">
-                        <form name="navURL" id="adjust_return" action="#" method="get">
-
-<form id="cnfmRtnSbmt" name="cnfmRtnSbmt" action="#" method="post" autocomplete="off">
-    <input type="hidden" name="struts.token.name" value="token" />
-<input type="hidden" name="token" /> 
      <div class="alert alert-info">
     	<h2>
 			Important
@@ -574,24 +568,32 @@
                    <a href="#" disabled="disabled" class="btn btn-default nowrap">Change this</a>
 	           </div>
 	       </div>
+<div class="wb-frmvld">
+<form id="cnfmRtnSbmt" name="cnfmRtnSbmt" action="#" method="post" autocomplete="off">
+    <input type="hidden" name="struts.token.name" value="token" />
+    <input type="hidden" name="token" /> 
+			
 	<fieldset class="no-border mrgn-tp-md">
 		<fieldset class="no-border">
-		<legend class="required mrgn-bttm-0 mrgn-tp-md">
-		    Certification<strong class="required"><strong>&nbsp;(required)</strong> </strong>
-		</legend>
+                            <legend class="required">
+                                <span class="field-name">Certification</span>:
+                                <strong class="required" aria-hidden="true">
+                                    (required)
+                                </strong>
+                            </legend>
 		</fieldset>
 		<div class="checkbox">
 		    <label for="certify">
-		        <input type="checkbox" name="certified" value="true" id="certify"/><input type="hidden" id="__checkbox_certify" name="__checkbox_certified" value="true" />
+		        <input type="checkbox" name="gotoURL" value="true" id="certify" data-rule-required="true"/><input type="hidden" id="__checkbox_certify" name="__checkbox_certified" value="true" />
 		        I certify that the information given is, to the best of my knowledge, true, correct and complete in every respect and that I am the registrant or a person authorized to file on behalf of the registrant.
 		    </label>
 		</div>
 	</fieldset>
 	<br/>
 	<div id="buttonsLine">
-    	<a class="btn btn-default" href="b-rt-ar-08_eng.html" role="button">Previous</a>&nbsp;
-        <input name="button" type="button" class="btn btn-primary"" value="Submit" />
-    </div>
+    	    <a class="btn btn-default" href="b-rt-ar-08_eng.html" role="button">Previous</a>&nbsp;
+            <input name="button" type="button" class="btn btn-primary" value="Submit" />
+        </div>
     <div class="row mrgn-tp-md"> </div>
                         </form>
                         </div>
@@ -707,7 +709,7 @@
 */
     </script>
                                 <script>
-                                    $("#adjust_return").submit(function(e) { 
+                                    $("#cnfmRtnSbmt").submit(function(e) { 
                                         $(".wb-frmvld").trigger("wb-init.wb-frmvld");
                                         e.preventDefault(); // Cancel the submit
                                         return false;
