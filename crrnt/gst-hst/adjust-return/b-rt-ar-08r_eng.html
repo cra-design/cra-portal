@@ -584,7 +584,7 @@
 		</fieldset>
 		<div class="checkbox">
 		    <label for="certify">
-		        <input type="checkbox" name="gotoURL" value="true" id="certify" data-rule-required="true"/><input type="hidden" id="__checkbox_certify" name="__checkbox_certified" value="true" />
+		        <input type="checkbox" name="gotoURL" value="true" id="certify" data-rule-required="true" href=""/><input type="hidden" id="__checkbox_certify" name="__checkbox_certified" value="true" />
 		        I certify that the information given is, to the best of my knowledge, true, correct and complete in every respect and that I am the registrant or a person authorized to file on behalf of the registrant.
 		    </label>
 		</div>
@@ -711,6 +711,7 @@
                                 <script>
                                     $("#cnfmRtnSbmt").submit(function(e) { 
                                         $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+                                        radioURL(document.navURL.gotoURL);
                                         e.preventDefault(); // Cancel the submit
                                         return false;
                                     });
