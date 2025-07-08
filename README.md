@@ -14,6 +14,9 @@ Project site for CRA portal tests.
 adjust-return
 
 - https://cra-design.github.io/cra-portal/crrnt/gst-hst/adjust-return/b-rt-ar-01_eng.html
+- https://cra-design.github.io/cra-portal/crrnt/gst-hst/adjust-return/b-rt-ar-08_eng.html
+- https://cra-design.github.io/cra-portal/crrnt/gst-hst/adjust-return/b-rt-ar-08r_eng.html
+- https://cra-design.github.io/cra-portal/crrnt/gst-hst/adjust-return/b-rt-ar-09_eng.html
 
 calculate-instalment-payments
 
