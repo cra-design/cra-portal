@@ -7,5 +7,17 @@
     }, 
     {
       "origin": "https://psi3b8.axshare.com/wel-01_eng.html?code=2591eff34de5015c197a7a422f2bec7a" 
+    }, 
+    {
+      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account/gst-hst-electronic-filing.html", 
+      "destination": "https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html"
+    }, 
+    {
+      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/file-a-gst-hst-return-rebate-election-electronically/electronic-rebate-forms.html", 
+      "destination": "https://cra-design.github.io/cra-portal/help/electronic-rebate-forms.html"
+    }, 
+    {
+      "origin": "https://www.canada.ca/en/revenue-agency/services/payments/payments-cra.html", 
+      "destination": "https://cra-design.github.io/cra-portal/help/payments-cra.html"
     }
 ]
