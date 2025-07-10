@@ -10,6 +10,8 @@ Project site for CRA portal tests.
 - [T1 COP github repository](https://github.com/cra-design/T1-cop/)
 - [github.dev](https://github.dev/cra-design/cra-portal/blob/main/)
 
+## MYBA links
+
 adjust-return
 
 - https://cra-design.github.io/cra-portal/crrnt/gst-hst/adjust-return/b-rt-ar-01_eng.html
@@ -44,3 +46,12 @@ view-expected-filed-returns
 
 - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-01_eng.html
 - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02_eng.html
+
+Help files
+
+- https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html
+- https://cra-design.github.io/cra-portal/help/electronic-rebate-forms.html
+- https://cra-design.github.io/cra-portal/help/payments-cra.html
+- https://cra-design.github.io/cra-portal/help/adjust-a-return.html
+- https://cra-design.github.io/cra-portal/help/file-election.html
+- https://cra-design.github.io/cra-portal/help/view-expected-filed-returns.html
