@@ -1,6 +1,6 @@
 # standard jekyll configuration
 content_editable: true
-baseurl: /core-prototype
+baseurl: /cra-portal
 url: https://cra-design.github.io
 repository: cra-design/core-portal
 website: https://www.canada.ca/en.html
@@ -25,7 +25,8 @@ creator:
 developerOptions: false
 devOptionsLocStore: "gitCRATemplateDevOptions"
 exitByURL: false
-exitPage: "/cra-portal/exit.html"
+exitPage: 
+  en: "/cra-portal/exit.html"
 externalOrigin: "https://www.canada.ca"
 modifiedLinkList: "/templates/data/exclude-redirect.json"
 relativeExternalLinks: false
@@ -48,7 +49,7 @@ defaults:
       feedbackPath: https://www.canada.ca/etc/designs/canada/wet-boew/assets/feedback/page-feedback-en.html
       privacyUrl: https://www.canada.ca/en/revenue-agency/corporate/privacy-notice.html
       termsURL: https://www.canada.ca/en/transparency/terms.html
-      sitemenuPath: https://www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html      
+      sitemenuPath: https://www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html
       contextualFooter:
         title: "Canada Revenue Agency (CRA)"
         links:
@@ -61,7 +62,7 @@ defaults:
       css: 
         - https://use.fontawesome.com/releases/v5.15.4/css/all.css
         - https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/m%C3%A9li-m%C3%A9lo/2025-12-mille-iles.css
-        - https://cra-design.github.io/cra-portal/templates/css/testing-banner.css        
+        - https://cra-design.github.io/core-prototype/source/css/testing-banner.css
       script: 
         - https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/m%C3%A9li-m%C3%A9lo/2025-12-mille-iles.js
-        - https://cra-design.github.io/gst-hst-business/templates/scripts/external-link-detour.js
+        - https://cra-design.github.io/core-prototype/source/scripts/external-link-detour.js
