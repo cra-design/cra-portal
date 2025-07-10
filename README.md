@@ -43,3 +43,4 @@ view-elections
 view-expected-filed-returns
 
 - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-01_eng.html
+- https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02_eng.html
