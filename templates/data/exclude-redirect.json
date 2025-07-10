@@ -29,6 +29,10 @@
       "destination": "https://cra-design.github.io/cra-portal/help/file-election.html"
     }, 
     {
+      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account/view-expected-filed-returns.html", 
+      "destination": "https://cra-design.github.io/cra-portal/help/view-expected-filed-returns.html"
+    }, 
+    {
       "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/gst-hst-netfile/gst-hst-netfile-about-gst-hst-netfile.html", 
       "destination": "https://cra-design.github.io/gst-hst-business/en/topics/gst-hst-businesses/file-return/how-file.html"
     }
