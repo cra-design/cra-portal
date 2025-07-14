@@ -274,7 +274,7 @@
                                 <div>
                                      <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" name="gotoURL" data-rule-required="true">I certify that the information given on this form is correct and complete, and that I am the registrant or that I am authorized to file on behalf of the registrant.
+                                            <input type="checkbox" id="certify" name="certified" data-rule-required="true">I certify that the information given on this form is correct and complete, and that I am the registrant or that I am authorized to file on behalf of the registrant.
                                         </label>
                                     </div>
                                 </div>
@@ -416,8 +416,10 @@
                                 <script>
                                     $("#election_GSTHST_reporting_period").submit(function(e) { 
                                         $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-                                        radioURL(document.navURL.gotoURL);
                                         e.preventDefault(); // Cancel the submit
+            if (document.getElementById("certify").checked === true) {
+                gooto("b-rt-fe-09_eng.html");
+            }
                                         return false;
                                     });
                                 </script>
