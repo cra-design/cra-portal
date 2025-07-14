@@ -261,6 +261,7 @@
                         <br><br>
                     <div class="form-group">
                         <div class="mrgn-bttm-md">
+                            <fieldset class="no-border">
                             <legend class="required">
                                 <span class="field-name">Certification</span>:
 
@@ -271,13 +272,12 @@
                             </legend>
 
 
-                                <div>
                                      <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" id="certify" name="certified" data-rule-required="true">I certify that the information given on this form is correct and complete, and that I am the registrant or that I am authorized to file on behalf of the registrant.
+                                        <label for="certify">
+                                            <input data-rule-required="true" type="checkbox" name="certified" value="true" id="certify">I certify that the information given on this form is correct and complete, and that I am the registrant or that I am authorized to file on behalf of the registrant.
                                         </label>
                                     </div>
-                                </div>
+</fieldset>
                         </div>
                     </div>
 
@@ -290,11 +290,14 @@
                       
                         <div id="buttonsLine">
                             <a class="btn btn-default" href="b-rt-sp-01_eng.html" role="button">Previous</a>&nbsp;
-                            <input name="button" type="submit" class="btn btn-primary"  onclick="$( '.wb-frmvld' ).trigger( 'wb-init.wb-frmvld' );radioURL(document.navURL.gotoURL);" value="Next" />
+                            <input name="button" type="submit" class="btn btn-primary" value="Next" />
                           
                         </div>
 
                     </div>
+                            </form>
+
+            </div>
                 <br>
 
 
@@ -310,9 +313,6 @@
                             <time>YYYY-MM-DD</time>
                         </dd>
                     </dl>
-                            </form>
-
-            </div>
         </main>
 
         <nav class="wb-sec col-md-3 col-md-pull-9" typeof="SiteNavigationElement" id="wb-sec" role="navigation">
