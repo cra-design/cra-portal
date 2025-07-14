@@ -374,6 +374,9 @@
                                     $("#adjust_return").submit(function(e) { 
                                         $(".wb-frmvld").trigger("wb-init.wb-frmvld");
                                         e.preventDefault(); // Cancel the submit
+            if (document.getElementById("dateSelected").value !== "true") {
+                gooto("b-rt-ar-08_eng.html");
+            }
                                         return false;
                                     });
                                 </script>
