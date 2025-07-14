@@ -572,20 +572,18 @@
 <form id="cnfmRtnSbmt" name="cnfmRtnSbmt" action="#" method="get" autocomplete="off">
     <input type="hidden" name="struts.token.name" value="token" />
     <input type="hidden" name="token" /> 
+    <input type="hidden" id="__checkbox_certify" name="__checkbox_certified" value="true" />
 			
 	<fieldset class="no-border mrgn-tp-md">
-		<fieldset class="no-border">
-            <input type="hidden" id="__checkbox_certify" name="__checkbox_certified" value="true" />
                             <legend class="required">
                                 <span class="field-name">Certification</span>:
                                 <strong class="required" aria-hidden="true">
                                     (required)
                                 </strong>
                             </legend>
-		</fieldset>
 		<div class="checkbox">
 		    <label for="certify">
-		        <input type="checkbox" data-rule-required="true" name="certified" value="true" id="certify"/>
+		        <input data-rule-required="true" type="checkbox" name="certified" value="true" id="certify"/>
 		        I certify that the information given is, to the best of my knowledge, true, correct and complete in every respect and that I am the registrant or a person authorized to file on behalf of the registrant.
 		    </label>
 		</div>
