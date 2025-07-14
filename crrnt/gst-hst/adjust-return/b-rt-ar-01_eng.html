@@ -188,7 +188,7 @@
                                 </dt>
                                 <dd class="p-0">
                                     <strong>
-                                        CLIENT NAME FOR 123456789
+                                        ABC Industries
                                     </strong>
                                 </dd>
                                 <dt class="p-0">
@@ -208,9 +208,9 @@
                                 <a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account/adjust-a-return.html#lgblty" target="helpWindow" title="Help - Opens in a new window - Eligible returns"><span class="glyphicon glyphicon-question-sign"></span></a></label><br>
                             <span>(if the period you want to adjust is not listed, select the help icon for more information)</span>
 
-                            <select name="eligibilityDTO.selectedEligibleEndDate" onchange="TurnOnOrOff(this.selectedIndex)" id="dateSelected" class="form-control mrgn-tp-sm" required="required">
-                                <option value="Select">Select</option>
-                                <option value="2013-01-01">2025-03-31</option>
+                            <select id="dateSelected" name="eligibilityDTO.selectedEligibleEndDate" class="form-control mrgn-tp-sm" required="required">
+                                <option value="">Select</option>
+                                <option value="2025-03-31">2025-03-31</option>
                             </select>
                         </div>
                             <div class="form-group mrgn-tp-lg">
@@ -253,7 +253,7 @@
 
                             <div id="buttonsLine">
                                 <a class="btn btn-default" href="https://chpjtp.axshare.com/a-mba-08_eng.html" role="button">Previous</a>
-                                <a class="btn btn-primary" href="#" role="button" onclick="$( '.wb-frmvld' ).trigger( 'wb-init.wb-frmvld' );">Next</a>
+                                <input name="button" type="submit" data-exit="false" class="btn btn-primary" value="Next" />
                             </div>
                             <p class="mrgn-tp-md">Please note that this service cannot be used to resolve a formal dispute. If you want to file a Notice of Objection you must complete Form GST159, <i>Notice of Objection (GST/HST)</i>.</p>
                         </form>
