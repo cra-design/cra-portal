@@ -194,9 +194,6 @@
 
 
 
-<form id="eligibilityForm_filereturn" method="get" action="https://www.canada.ca/gol-ged/ghnf/myba/filereturn/prot/eligibilitySubmit.do" onsubmit="disableButtons();">
-	<input type="hidden" name="page" value="100" />
-	<input type="hidden" name="whichButton" />
 	
 	
 
@@ -454,6 +451,8 @@
 				<p>You are about to leave the confirmation page. We recommend printing or saving this page before leaving.</p>
 				<p>
 					<form id="rtnCnfrmtn" name="rtnCnfrmtn" action="https://www.canada.ca/gol-ged/ghnf/myba/prot/rtnCnfrmtn.action" method="get" autocomplete="off">
+	<input type="hidden" name="page" value="100" />
+	<input type="hidden" name="whichButton" />
 						<input type="hidden" name="struts.token.name" value="token" />
 <input type="hidden" name="token" value="7DNVJA79BSVTI0STX8MWW95C6VYMYVB6" />
 	<button class="btn btn-default popup-modal-dismiss" type="button">
@@ -461,7 +460,6 @@
 						</button>
 					 <a class="btn btn-primary" href="#" role="button">Continue to make a payment</a>
 							
-					</form>
 
 
 
