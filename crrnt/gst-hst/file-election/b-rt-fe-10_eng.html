@@ -214,6 +214,7 @@
                 <br>
                     <div class="form-group">
                         <div class="mrgn-bttm-md">
+                            <fieldset class="chkbxrdio-grp">
                             <legend class="required">
                                 <span class="field-name">New reporting period</span>:
 
@@ -224,18 +225,17 @@
                             </legend>
 
 
-                                <div>
                                      <div class="radio mrgn-bttm-md">
-                                        <label>
-                                            <input type="radio" name="gotoURL" value="b-rt-fe-11_eng.html" data-rule-required="true">Annual
+                                        <label for="option1">
+                                            <input id="option1" type="radio" name="gotoURL" value="b-rt-fe-11_eng.html" data-rule-required="true">Annual
                                         </label>
                                     </div>
                                     <div class="radio mrgn-bttm-lg">
-                                        <label>
-                                            <input type="radio" name="gotoURL" value="b-rt-fe-01_eng.html" data-rule-required="true">Quarterly
+                                        <label for="option2">
+                                            <input id="option2" type="radio" name="gotoURL" value="b-rt-fe-01_eng.html" data-rule-required="true">Quarterly
                                         </label>
                                     </div>
-                                </div>
+                            </fieldset>
                         </div>
                     <div class="form-group">
                         <div class="mrgn-bttm-md">
@@ -248,7 +248,9 @@
                                 </strong>
                             </label>
 <a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/file-election.html#dt20" target="helpWindow" title="Help - Opens in a new window"><span class="glyphicon glyphicon-question-sign mrgn-lft-sm"></span><span class="wb-inv">help</span></a>
-                            <input id="effectDate" type="date" name="effectDate" required="required">
+<div class="form-group">
+                            <input id="effectDate" class="form-control input-lg" type="date" name="effectDate" required="required">
+                            </div>
                         </div>
                     </div>
                         <br><br>
