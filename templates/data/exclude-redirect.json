@@ -35,5 +35,13 @@
     {
       "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/gst-hst-netfile/gst-hst-netfile-about-gst-hst-netfile.html", 
       "destination": "https://cra-design.github.io/gst-hst-business/en/topics/gst-hst-businesses/file-return/how-file.html"
+    }, 
+    {
+      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/help-enquiries-service.html", 
+      "destination": "https://cra-design.github.io/cra-portal/help/help-enquiries-service.html"
+    }, 
+    {
+      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/help-business-account.html", 
+      "destination": "https://cra-design.github.io/cra-portal/help/help-business-account.html"
     }
 ]
