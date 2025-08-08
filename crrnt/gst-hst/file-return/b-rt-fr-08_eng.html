@@ -594,19 +594,19 @@ to review your return.
                 return (line109() - (line110() + line111())) + (line205() + line405());
             }
 
-        $("adjust_return").on("change", "#line-id-103, #line-id-104", function () {
+        $("#eligibilityForm_filereturn").on("change", "#line-id-103, #line-id-104", function () {
             $("#line-id-105").val(currencyFormatter.format(line105()));
         });
 
-        $("adjust_return").on("change", "#line-id-106, #line-id-107", function () {
+        $("#eligibilityForm_filereturn").on("change", "#line-id-106, #line-id-107", function () {
             $("#line-id-108").val(currencyFormatter.format(line108()));
         });
 
-        $("adjust_return").on("change", "#line-id-103, #line-id-104, #line-id-106, #line-id-107", function () {
+        $("#eligibilityForm_filereturn").on("change", "#line-id-103, #line-id-104, #line-id-106, #line-id-107", function () {
             $("#line-id-109").val(currencyFormatter.format(line109()));
         });
 
-        $("adjust_return").on("change", "#line-id-103, #line-id-104, #line-id-106, #line-id-107, #line-id-110, #line-id-111, #line-id-205, #line-id-405", function () {
+        $("#eligibilityForm_filereturn").on("change", "#line-id-103, #line-id-104, #line-id-106, #line-id-107, #line-id-110, #line-id-111, #line-id-205, #line-id-405", function () {
             if (line113C() > 0) {
                 $("#line-id-114").val(currencyFormatter.format(0));
                 $("#line-id-115").val(currencyFormatter.format(line113C()));

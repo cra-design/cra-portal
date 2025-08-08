@@ -699,11 +699,11 @@
                 return (line109() - (line110 + line111)) + (line205() + line405());
             };
 
-        $("adjust_return").on("change", "#line105, #line108", function () {
+        $("#adjust_return").on("change", "#line105, #line108", function () {
             $("#line109").val(currencyFormatter.format(line109()));
         });
 
-        $("adjust_return").on("change", "#line205, #line405", function () {
+        $("#adjust_return").on("change", "#line205, #line405", function () {
             if (line113C() > 0) {
                 $("#line114").val(currencyFormatter.format(0));
                 $("#line115").val(currencyFormatter.format(line113C()));
