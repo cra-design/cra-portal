@@ -737,25 +737,20 @@
             currencyFormatter = new Intl.NumberFormat(pagelang + "-CA", {
                 style: "currency",
                 currency: "CAD",
-                minimumFractionDigits: 0,
-                maximumFractionDigits: 0,
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2,
                 roundingPriority: "auto",
                 roundingMode: "trunc"
             }), 
-            NumberParser = class NumberParser {
-                constructor(locale) {
-                    const parts = new Intl.NumberFormat(locale).formatToParts(12345.6);
-                    const numerals = [...new Intl.NumberFormat(locale, { useGrouping: false }).format(9876543210)].reverse();
-                    const index = new Map(numerals.map((d, i) => [d, i]));
+            convertCurrencyStringToNumber= function convertCurrencyStringToNumber(currencyString) {
+                // Remove currency symbols, commas, and spaces
+                const cleanedString = currencyString.replace(/[^\d.]/g, '');
 
-                    this._group = new RegExp(`[${parts.find(d => d.type === "group").value}]`, "g");
-                    this._decimal = new RegExp(`[${parts.find(d => d.type === "decimal").value}]`);
-                    this._numeral = new RegExp(`[${numerals.join("")}]`, "g");
-                    this._index = d => index.get(d);
-                }
-                parse(string) {
-                    return (string = string.trim().replace(this._group, "").replace(this._decimal, ".").replace(this._numeral, this._index)) ? +string : NaN;
-                }
+                // Parse the cleaned string to a float
+                const numberValue = parseFloat(cleanedString);
+
+                // Return the number, or handle NaN if the conversion failed
+                return isNaN(numberValue) ? 0 : numberValue; // Return 0 or throw an error if conversion is invalid
             }, 
             updateFieldValues = function updateFieldValues() {
                 // Get the URLSearchParams object from the current URL's query string
@@ -768,7 +763,7 @@
 
                     // If a matching input element is found, update its value
                     if (elm !== null) {
-                        elm.innerHTML = currencyFormatter.format(new NumberParser(pagelang + "-CA").parse(value));
+                        elm.innerHTML = currencyFormatter.format(convertCurrencyStringToNumber(value));
                     }
                 });
             };
