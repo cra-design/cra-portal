@@ -9,24 +9,32 @@
       "origin": "https://psi3b8.axshare.com/wel-01_eng.html?code=2591eff34de5015c197a7a422f2bec7a" 
     }, 
     {
+      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/file-a-return.html", 
+      "destination": "https://cra-design.github.io/cra-portal/help/file-a-return.html"
+    }, 
+    {
+      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/file-election.html", 
+      "destination": "https://cra-design.github.io/cra-portal/help/file-election.html"
+    }, 
+    {
       "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/gst-hst-electronic-filing.html", 
       "destination": "https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html"
+    }, 
+    {
+      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/help-enquiries-service.html", 
+      "destination": "https://cra-design.github.io/cra-portal/help/help-enquiries-service.html"
+    }, 
+    {
+      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/help-business-account.html", 
+      "destination": "https://cra-design.github.io/cra-portal/help/help-business-account.html"
     }, 
     {
       "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/file-a-gst-hst-return-rebate-election-electronically/electronic-rebate-forms.html", 
       "destination": "https://cra-design.github.io/cra-portal/help/electronic-rebate-forms.html"
     }, 
     {
-      "origin": "https://www.canada.ca/en/revenue-agency/services/payments/payments-cra.html", 
-      "destination": "https://cra-design.github.io/cra-portal/help/payments-cra.html"
-    },
-    {
       "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account/adjust-a-return.html", 
       "destination": "https://cra-design.github.io/cra-portal/help/adjust-a-return.html"
-    }, 
-    {
-      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/file-election.html", 
-      "destination": "https://cra-design.github.io/cra-portal/help/file-election.html"
     }, 
     {
       "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account/view-expected-filed-returns.html", 
@@ -37,11 +45,7 @@
       "destination": "https://cra-design.github.io/gst-hst-business/en/topics/gst-hst-businesses/file-return/how-file.html"
     }, 
     {
-      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/help-enquiries-service.html", 
-      "destination": "https://cra-design.github.io/cra-portal/help/help-enquiries-service.html"
-    }, 
-    {
-      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/help-business-account.html", 
-      "destination": "https://cra-design.github.io/cra-portal/help/help-business-account.html"
+      "origin": "https://www.canada.ca/en/revenue-agency/services/payments/payments-cra.html", 
+      "destination": "https://cra-design.github.io/cra-portal/help/payments-cra.html"
     }
 ]
