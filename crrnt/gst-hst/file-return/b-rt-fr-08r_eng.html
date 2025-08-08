@@ -606,7 +606,7 @@
                     if (elm !== null) {
                         fieldVal = convertCurrencyStringToNumber(value);
                         elm.innerHTML = currencyFormatter.format(fieldVal);
-                        if (key === "refundClaimed.amount") {
+                        if (key === "refundClaimed.amount" && fieldVal > 0) {
                             document.getElementById("refundconfirm").classList.remove("wb-inv");
                             document.getElementById("refundval").innerHTML = elm.innerHTML;
                         }
