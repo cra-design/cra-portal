@@ -252,8 +252,181 @@
                    </div>
             </div>
         -->
+    <strong>GST/HST return summary</strong>
 
-<div data-ajax-replace="https://cra-design.github.io/cra-portal/crrnt/gst-hst/includes/gst_hst_summary.htm"></div>
+
+<div class="row mrgn-tp-md">
+               <div class="col-sm-10">
+<table class="table table-condensed table-striped">
+<thead>
+ 
+</thead>
+<tbody>
+<tr>
+            <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    101
+            </th>
+    <td>
+        Sales and other revenue
+    </td>
+     <td id="salesAndOtherRevenue.amount" class="text-nowrap text-right">$0.00</td>
+</tr> 
+<tr>
+            <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    135
+            </th>
+    <td>
+        Total GST/HST new housing rebates (included in line 107)
+    </td>
+     <td id="newHousingRebates.amount" class="text-nowrap text-right">$0.00</td>
+</tr> 
+<tr>
+            <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    136
+            </th>
+    <td>
+        Deduction for pension rebate amount (included in line 107)
+    </td>
+     <td id="pensionRebateDeduction.amount" class="text-nowrap text-right">$0.00</td>
+</tr> 
+<tr>
+            <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    103
+            </th>
+    <td>
+        GST/HST collected or that became collectible in the reporting period
+    </td>
+     <td id="totalGSTAndAdjustments.amount103" class="text-nowrap text-right">$0.00</td>
+</tr>
+<tr>
+            <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    104
+            </th>
+    <td>
+        Adjustments to be added to the net tax for the reporting period
+    </td>
+     <td id="totalGSTAndAdjustments.amount104" class="text-nowrap text-right">$0.00</td>
+</tr>
+<tr>
+            <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    105
+            </th>
+    <td>
+        Total GST/HST and adjustments for this period
+    </td>
+     <td id="totalGSTAndAdjustments.amount105" class="text-nowrap text-right">$0.00</td>
+</tr>
+    <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    106
+            </th>
+    <td>
+        ITC’s for the current period and unclaimed ITC’s from a previous period       
+    </td>
+    <td id="totalITCs.amount106" class="text-right">$0.00</td>
+</tr>
+    <tr>
+        <th scope="row" class="text-nowrap col-md-lineNumber">
+                Line 
+                107
+        </th>
+    <td>
+        Adjustments to be deducted when determining the net tax for the reporting period       
+    </td>
+    <td id="totalITCs.amount107" class="text-right">$0.00</td>
+</tr>
+    <tr>
+            <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    108
+            </th>
+    <td>
+        Total ITCs and adjustments
+    </td>
+     <td id="totalITCs.amount108" class="text-nowrap text-right">$0.00</td>
+</tr> 
+<tr>
+            <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    109
+            </th>
+    <td>
+        Net tax 
+    </td>
+     <td id="netTax.amount" class="text-nowrap text-right">$0.00</td>
+</tr> 
+<tr>
+            <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    110
+            </th>
+    <td>
+        Instalments and other annual filer payments
+    </td>
+     <td id="instalmentCredits.amount" class="text-nowrap text-right">$0.00</td>
+</tr> 
+<tr>
+            <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    111
+            </th>
+    <td>
+        Rebates 
+    </td>
+     <td id="rebatesCredits.amount" class="text-nowrap text-right">$0.00</td>
+</tr> 
+<tr>
+    <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 205
+    </th>
+     <td>
+        GST/HST due on purchases of real property or purchases of emission allowances
+     </td>
+     <td id="taxableRealProperty.amount" class="text-nowrap text-right">$0.00</td>
+</tr> 
+<tr>
+            <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    405
+            </th>
+    <td>
+        Other GST/HST to be self-assessed
+    </td>
+     <td id="otherSelfAssessedGST.amount" class="text-nowrap text-right">$0.00</td>
+</tr> 
+<tr>
+            <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    114
+            </th>
+    <td>
+        Refund claimed 
+    </td>
+     <td id="refundClaimed.amount" class="text-nowrap text-right">$0.00</td>
+</tr> 
+<tr>
+            <th scope="row" class="text-nowrap col-md-lineNumber">
+                    Line 
+                    115
+            </th>
+    <td>
+        Amount owing 
+    </td>
+     <td id="amountOwing.amount" class="text-nowrap text-right">$0.00</td>
+</tr> 
+</tbody>
+</table>
+               </div>
+           </div>
+
+
+<!--<div data-ajax-replace="https://cra-design.github.io/cra-portal/crrnt/gst-hst/includes/gst_hst_summary.htm"></div>-->
 
 <div class="wb-frmvld">
 <form id="psbFdrlRbtRvwNpt" name="psbFdrlRbtRvwNpt" action="" method="get" autocomplete="off">
@@ -408,6 +581,23 @@
             }
             return false;
         });
+
+function updateFieldValues() {
+// Get the URLSearchParams object from the current URL's query string
+const urlParams = new URLSearchParams(window.location.search);
+
+// Iterate over each key-value pair in the query string
+urlParams.forEach((value, key) => {
+    // Find an input element with a matching name attribute
+    const elm = document.querySelector("#" + CSS.escape(key));
+
+    // If a matching input element is found, update its value
+    if (elm !== null) {
+        elm.innerHTML = value;
+    }
+});
+}
+document.addEventListener("DOMContentLoaded", updateFieldValues());
     </script>
 </body>
 </html>
