@@ -446,7 +446,7 @@
             <label for="certify">
                 <input data-rule-required="true" type="checkbox" name="certified" value="true" id="certify">
                 I certify that the information given is, to the best of my knowledge, true, correct and complete in every respect and that I am the registrant or a person authorized to file on behalf of the registrant.
-                I confirm that I am claiming a refund of <strong>$0.00</strong>. 
+                <span id="refundconfirm" class="wb-inv">I confirm that I am claiming a refund of <strong id="refundval">$0.00</strong>.</span> 
             </label>
         </div>
     </fieldset>    
@@ -597,13 +597,19 @@
                 const urlParams = new URLSearchParams(window.location.search);
 
                 // Iterate over each key-value pair in the query string
-                urlParams.forEach((value, key) => {
+                urlParams.forEach(function (value, key) {
                     // Find an input element with a matching name attribute
                     const elm = document.querySelector("#" + CSS.escape(key));
+                    let fieldVal = 0;
 
                     // If a matching input element is found, update its value
                     if (elm !== null) {
-                        elm.innerHTML = currencyFormatter.format(convertCurrencyStringToNumber(value));
+                        fieldVal = convertCurrencyStringToNumber(value);
+                        elm.innerHTML = currencyFormatter.format(fieldVal);
+                        if (key === "refundClaimed.amount") {
+                            document.getElementById("refundconfirm").classList.remove("wb-inv");
+                            document.getElementById("refundval").innerHTML = elm.innerHTML;
+                        }
                     }
                 });
             };

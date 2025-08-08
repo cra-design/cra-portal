@@ -757,7 +757,7 @@
                 const urlParams = new URLSearchParams(window.location.search);
 
                 // Iterate over each key-value pair in the query string
-                urlParams.forEach((value, key) => {
+                urlParams.forEach(function (value, key) {
                     // Find an input element with a matching name attribute
                     const elm = document.querySelector("#" + CSS.escape(key));
 
