@@ -732,32 +732,42 @@
         })();
 */
     </script>
-                                <script>
-                                    $("#cnfmRtnSbmt").submit(function(e) { 
-                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-                                        e.preventDefault(); // Cancel the submit
+    <script>
+        let pagelang = document.documentElement.lang,
+            currencyFormatter = new Intl.NumberFormat(pagelang + "-CA", {
+                style: "currency",
+                currency: "CAD",
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0,
+                roundingPriority: "auto",
+                roundingMode: "trunc"
+            }), 
+            updateFieldValues = function updateFieldValues() {
+                // Get the URLSearchParams object from the current URL's query string
+                const urlParams = new URLSearchParams(window.location.search);
+
+                // Iterate over each key-value pair in the query string
+                urlParams.forEach((value, key) => {
+                    // Find an input element with a matching name attribute
+                    const elm = document.querySelector("#" + CSS.escape(key));
+
+                    // If a matching input element is found, update its value
+                    if (elm !== null) {
+                        elm.innerHTML = currencyFormatter.format(value);
+                    }
+                });
+            };
+
+        document.addEventListener("DOMContentLoaded", updateFieldValues());
+
+        $("#cnfmRtnSbmt").submit(function(e) {
+            $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+            e.preventDefault(); // Cancel the submit
             if (document.getElementById("certify").checked === true) {
                 gooto("b-rt-ar-09_eng.html");
             }
-                                        return false;
-                                    });
-
-function updateFieldValues() {
-// Get the URLSearchParams object from the current URL's query string
-const urlParams = new URLSearchParams(window.location.search);
-
-// Iterate over each key-value pair in the query string
-urlParams.forEach((value, key) => {
-    // Find an input element with a matching name attribute
-    const elm = document.querySelector("#" + CSS.escape(key));
-
-    // If a matching input element is found, update its value
-    if (elm !== null) {
-        elm.innerHTML = value;
-    }
-});
-}
-document.addEventListener("DOMContentLoaded", updateFieldValues());
+            return false;
+        });
 </script>
 </body>
 </html>
