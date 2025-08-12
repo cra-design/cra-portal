@@ -24,34 +24,30 @@ contextualFooter:
 feedback: false
 ---
 
-<div class="row">
-    <div class="col-md-3">
-        <nav role="navigation" id="wb-sec" typeof="SiteNavigationElement" class="visible-md visible-lg">
-            <h2>Section menu</h2>
-            <ul class="list-group menu list-unstyled">
-                <li>
-                    <h3 class="wb-navcurr"><a href="#">Header 1</a></h3>
-                    <ul class="list-group menu list-unstyled">
-                        <li><a class="list-group-item" href="#">Item 1</a></li>
-                        <li><a class="list-group-item" href="#">Item 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="list-group menu list-unstyled mrgn-tp-lg">
-                <li>
-                    <h3 class="wb-navcurr">Header 2</h3>
-                    <ul class="list-group menu list-unstyled">
-                        <li><a class="list-group-item" href="#">Item 3</a></li>
-                        <li><a class="list-group-item" href="#">Item 4</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-
-    <div class="col-md-9 mrgn-tp-md">
-        <!--<h1>Application page title</h1>-->
-        <p>page content</p>
-    </div>
+<div class="col-md-9 col-md-push-3 mrgn-tp-md">
+    <!--<h1>Application page title</h1>-->
+    <p>page content</p>
 </div>
+
+
+<nav role="navigation" id="wb-sec" typeof="SiteNavigationElement" class="wb-sec col-md-3 col-md-pull-9">
+    <h2>Section menu</h2>
+    <ul class="list-group menu list-unstyled">
+        <li>
+            <h3 class="wb-navcurr"><a href="#">Header 1</a></h3>
+            <ul class="list-group menu list-unstyled">
+                <li><a class="list-group-item" href="#">Item 1</a></li>
+                <li><a class="list-group-item" href="#">Item 2</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="list-group menu list-unstyled mrgn-tp-lg">
+        <li>
+            <h3 class="wb-navcurr">Header 2</h3>
+            <ul class="list-group menu list-unstyled">
+                <li><a class="list-group-item" href="#">Item 3</a></li>
+                <li><a class="list-group-item" href="#">Item 4</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
