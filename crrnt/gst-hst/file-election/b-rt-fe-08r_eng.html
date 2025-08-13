@@ -201,9 +201,9 @@
             <dt class="p-0"> Business name: </dt>
             <dd class="p-0"> <strong>ABC Industries</strong> </dd>
             <dt class="p-0"> Fiscal year start date: </dt>
-            <dd class="p-0"> <strong>2025-01-01</strong> </dd>
+            <dd class="p-0"> <strong id="FQS">2025-01-01</strong> </dd>
             <dt class="p-0"> Fiscal year end date: </dt>
-            <dd class="p-0"> <strong>2025-12-31</strong> </dd>
+            <dd class="p-0"> <strong id="FQE">2025-12-31</strong> </dd>
          </dl>
 
 </div>
@@ -224,17 +224,17 @@
     <td id="Q1E">2025-03-31</td>
 </tr>
 <tr>
-    <td>Q1</td>
+    <td>Q2</td>
     <td id="Q2S">2025-04-01</td>
     <td id="Q2E">2025-06-30</td>
 </tr>
 <tr>
-    <td>Q1</td>
+    <td>Q3</td>
     <td id="Q3S">2025-07-01</td>
     <td id="Q3E">2025-09-30</td>
 </tr>
 <tr>
-    <td>Q1</td>
+    <td>Q4</td>
     <td id="Q4S">2025-10-01</td>
     <td id="Q4E">2025-12-31</td>
 </tr>
@@ -463,11 +463,19 @@
             // Iterate over each key-value pair in the query string
             urlParams.forEach(function (value, key) {
                 // Find an input element with a matching name attribute
-                const startElm = document.querySelector("#" + CSS.escape(key) + "S");
-                const endElm = document.querySelector("#" + CSS.escape(key) + "E");
-                let startYear, startMonth, startDate,  
-                    fieldVal = Date.parse(value);
+                let fieldVal, startElm, endElm, startYear, startMonth, startDate, 
+                    startCode = "", 
+                    endCode = "";
 
+                if (key.charAt(0) === "M" || key.charAt(0) === "Q") {
+                    startCode = "S";
+                    endCode = "E";
+                    fieldVal = Date.parse(value);
+                    startElm = document.querySelector("#" + CSS.escape(key) + startCode);
+                } else if (key.charAt(0) === "F") {
+                    startElm = document.querySelector("#" + CSS.escape(key));
+                }
+                endElm = document.querySelector("#" + CSS.escape(key) + endCode);
                 // If a matching input element is found, update its value
                 if (endElm !== null) {
                     endElm.innerHTML = value;

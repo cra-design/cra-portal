@@ -212,23 +212,23 @@
 
                     <h2 class="h3 mrgn-bttm-md">Fiscal year covered by this request</h2>
                     <div class="form-group mrgn-bttm-sm mrgn-bttm-md">
-                        <label for="from" class="required">
+                        <label for="FQS" class="required">
                             <span class="field-name">From</span>
                             <strong class="required" aria-hidden="true">
                                 (required)
                             </strong><span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span>
                         </label>
-                        <input id="from" type="date" name="from" class="form-control input-sm" data-rule-dateISO="true" required="required">
+                        <input id="FQS" type="date" name="FQS" class="form-control input-sm" data-rule-dateISO="true" required="required">
                     </div>
                     <br>
                     <div class="form-group mrgn-bttm-smmrgn-bttm-md">
-                        <label for="to" class="required">
+                        <label for="FQE" class="required">
                             <span class="field-name">To</span>
                             <strong class="required" aria-hidden="true">
                                 (required)
                             </strong><span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span>
                         </label>
-                        <input id="to" type="date" name="to" class="form-control input-sm" data-rule-dateISO="true" required="required">
+                        <input id="FQE" type="date" name="FQE" class="form-control input-sm" data-rule-dateISO="true" required="required">
                     </div>
                     <br>
                     <div class="form-group mrgn-bttm-xl required-no-asterisk">
@@ -478,7 +478,7 @@
     <script>
         $("#gsthst_Accounting_Periods").submit(function (e) {
             let fromDate, toDate, 
-                fieldIdArr = ["from", "to", "Q1", "Q2", "Q3", "Q4", "M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9", "M10", "M11", "M12"], 
+                fieldIdArr = ["FQS", "FQE", "Q1", "Q2", "Q3", "Q4", "M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9", "M10", "M11", "M12"], 
                 isfieldNotEmpty = false, 
                 checkfieldNotEmpty = function isfieldNotEmpty(elm) {
                     return document.getElementById(elm).value !== "";
@@ -486,11 +486,11 @@
 
             $(".wb-frmvld").trigger("wb-init.wb-frmvld");
             isfieldNotEmpty = fieldIdArr.every(checkfieldNotEmpty);
-            if (document.getElementById("from").value !== "") {
-                fromDate = new Date(document.getElementById("from").value);
+            if (document.getElementById("FQS").value !== "") {
+                fromDate = new Date(document.getElementById("FQS").value);
             }
-            if (document.getElementById("to").value !== "") {
-                toDate = new Date(document.getElementById("to").value);
+            if (document.getElementById("FQE").value !== "") {
+                toDate = new Date(document.getElementById("FQE").value);
             }
             if (isfieldNotEmpty === false || fromDate > toDate) {
                 e.preventDefault(); // Cancel the submit
