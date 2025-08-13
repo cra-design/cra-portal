@@ -476,7 +476,6 @@
 <dd><time>YYYY-MM-DD</time></dd>
       </dl>
     </main>
-    </strong>
     <nav class="wb-sec col-md-3 col-md-pull-9" typeof="SiteNavigationElement" id="wb-sec" role="navigation">
       <h2 id="wb-sec-h" class="wb-inv"> Secondary menu </h2>
       <ul class="list-group menu list-unstyled">
@@ -582,7 +581,7 @@
                 roundingPriority: "auto",
                 roundingMode: "trunc"
             }), 
-            convertCurrencyStringToNumber= function convertCurrencyStringToNumber(currencyString) {
+            convertCurrencyStringToNumber = function convertCurrencyStringToNumber(currencyString) {
                 // Remove currency symbols, commas, and spaces
                 const cleanedString = currencyString.replace(/[^\d.]/g, '');
 

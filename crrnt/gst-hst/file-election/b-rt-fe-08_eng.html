@@ -179,7 +179,7 @@
 
 
             <div class="wb-frmvld">
-                    <form name="navURL" id="gsthst_Accounting_Periods" action="#" method="get">
+                    <form name="navURL" id="gsthst_Accounting_Periods" action="b-rt-fe-08r_eng.html" method="get">
 
                     <h1 id="wb-cont" property="name">Notification of GST/HST Accounting Periods</h1>
                     <div class="mrgn-bttm-md">
@@ -485,7 +485,6 @@
                 };
 
             $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-            e.preventDefault(); // Cancel the submit
             isfieldNotEmpty = fieldIdArr.every(checkfieldNotEmpty);
             if (document.getElementById("from").value !== "") {
                 fromDate = new Date(document.getElementById("from").value);
@@ -493,10 +492,10 @@
             if (document.getElementById("to").value !== "") {
                 toDate = new Date(document.getElementById("to").value);
             }
-            if (isfieldNotEmpty === true && fromDate <= toDate) {
-                gooto("b-rt-fe-08r_eng.html");
+            if (isfieldNotEmpty === false || fromDate > toDate) {
+                e.preventDefault(); // Cancel the submit
+                return false;
             }
-            return false;
         });
     </script>
 </body>
