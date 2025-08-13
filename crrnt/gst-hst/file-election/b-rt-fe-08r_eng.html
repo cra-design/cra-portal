@@ -463,7 +463,8 @@
             // Iterate over each key-value pair in the query string
             urlParams.forEach(function (value, key) {
                 // Find an input element with a matching name attribute
-                let fieldVal, startElm, endElm, startYear, startMonth, startDate, 
+                let fieldVal, endElm, startYear, startMonth, startDate, 
+                    startElm = null, 
                     startCode = "", 
                     endCode = "";
 
