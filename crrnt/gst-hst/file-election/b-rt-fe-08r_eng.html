@@ -481,7 +481,7 @@
                 }
                 if (startElm !== null) {
                     startYear = fieldVal.getFullYear();
-                    startMonth = fieldVal.getMonth() + 1;
+                    startMonth = fieldVal.getMonth();
                     startDate = new Date(startYear, startMonth, 1);
                     startElm.innerHTML = startDate.toISOString().slice(0, 10);
                 }
