@@ -10,7 +10,7 @@ Project site for CRA portal tests.
 - [T1 COP github repository](https://github.com/cra-design/T1-cop/)
 - [github.dev](https://github.dev/cra-design/cra-portal/blob/main/)
 
-## MYBY GST Interaction path
+## MYBA Portal GST Interaction path
 
 ```mermaid
 flowchart TD
