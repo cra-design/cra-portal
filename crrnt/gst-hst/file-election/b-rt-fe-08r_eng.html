@@ -492,10 +492,10 @@
 
         $("#psbFdrlRbtRvwNpt").submit(function(e) { 
             $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+            e.preventDefault(); // Cancel the submit
             if (document.getElementById("certify").checked === true) {
                 gooto("https://chpjtp.axshare.com/a-mba-08_eng.html");
             } else {
-                e.preventDefault(); // Cancel the submit
                 return false;
             }
         });
