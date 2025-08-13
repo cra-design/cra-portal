@@ -471,7 +471,7 @@
                     startCode = "S";
                     endCode = "E";
                     startElm = document.querySelector("#" + CSS.escape(key) + startCode);
-                    fieldVal = Date.parse(value);
+                    fieldVal = new Date(value);
                 } else if (key.charAt(0) === "F") {
                     startElm = document.querySelector("#" + CSS.escape(key));
                     fieldVal = new Date(value);
