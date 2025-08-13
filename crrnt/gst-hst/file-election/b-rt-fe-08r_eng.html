@@ -474,7 +474,7 @@
                     fieldVal = Date.parse(value);
                 } else if (key.charAt(0) === "F") {
                     startElm = document.querySelector("#" + CSS.escape(key));
-                    fieldVal = Date.parse(value);
+                    fieldVal = new Date(value);
                 }
                 endElm = document.querySelector("#" + CSS.escape(key) + endCode);
                 // If a matching input element is found, update its value
