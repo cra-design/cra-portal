@@ -722,6 +722,8 @@
                 });
             };
 
+        document.addEventListener("DOMContentLoaded", updateFieldValues());
+
         $("#adjust_return").on("change", "#line105, #line108", function () {
             $("#line109").val(currencyFormatter.format(line109()));
         });
