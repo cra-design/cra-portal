@@ -615,7 +615,7 @@
     </fieldset>
     <br/>
     <div id="buttonsLine">
-            <a class="btn btn-default" href="b-rt-ar-08_eng.html" role="button">Previous</a>&nbsp;
+            <a id="prev" class="btn btn-default" href="b-rt-ar-08_eng.html" role="button">Previous</a>&nbsp;
             <input class="btn btn-primary" type="submit" value="Submit">
         </div>
     <div class="row mrgn-tp-md"> </div>
@@ -764,6 +764,9 @@
                     // If a matching input element is found, update its value
                     if (elm !== null) {
                         elm.innerHTML = currencyFormatter.format(convertCurrencyStringToNumber(value));
+                    }
+                    if (key === "nil" && value === "true") {
+                        document.getElementById("prev").href = "https://chpjtp.axshare.com/b-rt-fr-01_eng.html"
                     }
                 });
             };
