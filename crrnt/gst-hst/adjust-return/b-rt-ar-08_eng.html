@@ -708,7 +708,7 @@
                 urlParams.forEach(function (value, key) {
                     let fieldVal, startYear, startMonth, startDate;
                     // If a matching input element is found, update its value
-                    if (key === "eligibilityDTOSelectedEligibleEndDate") {
+                    if (key === "eligibilityDTO.selectedEligibleEndDate") {
                         fieldVal = new Date(value);
                         document.getElementById("to").value = value;
                         document.getElementById("reportto").innerHTML = value;
