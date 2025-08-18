@@ -220,7 +220,7 @@
         Reporting period:
     </dt>
     <dd>
-        <strong>2025-01-01 to 2025-03-31</strong>
+        <strong><span id="reportfrom">2025-01-01</span> to <span id="reportto">2025-03-31</span></strong>
     </dd>
 </dl>
 
@@ -245,7 +245,9 @@
 </section>
 <div class="wb-frmvld">
                         <form name="adjust_return" id="adjust_return" action="b-rt-ar-08r_eng.html" method="get">
-    
+<input id="from" name="from" type="hidden" value="2025-01-01">
+<input id="to" name="to" type="hidden" value="2025-03-31">
+
     <fieldset class="row no-border mrgn-tp-sm mrgn-bttm-md">
         
         
@@ -697,6 +699,27 @@
             }, 
             line113C = function () {
                 return (line109() - (line110 + line111)) + (line205() + line405());
+            }, 
+            updateFieldValues = function updateFieldValues() {
+                // Get the URLSearchParams object from the current URL's query string
+                const urlParams = new URLSearchParams(window.location.search);
+
+                // Iterate over each key-value pair in the query string
+                urlParams.forEach(function (value, key) {
+                    let fieldVal, startYear, startMonth, startDate;
+                    // If a matching input element is found, update its value
+                    if (key === "eligibilityDTOSelectedEligibleEndDate") {
+                        fieldVal = new Date(value);
+                        document.getElementById("to").value = value;
+                        document.getElementById("reportto").innerHTML = value;
+
+                        startYear = fieldVal.getFullYear();
+                        startMonth = fieldVal.getMonth();
+                        startDate = new Date(startYear, startMonth, 1);
+                        document.getElementById("reportfrom").innerHTML = startDate.toISOString().slice(0, 10);
+                        document.getElementById("from").value = startDate.toISOString().slice(0, 10);
+                    }
+                });
             };
 
         $("#adjust_return").on("change", "#line105, #line108", function () {
