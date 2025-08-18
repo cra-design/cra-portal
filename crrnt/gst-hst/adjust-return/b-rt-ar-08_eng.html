@@ -714,7 +714,7 @@
                         document.getElementById("reportto").innerHTML = value;
 
                         startYear = fieldVal.getFullYear();
-                        startMonth = fieldVal.getMonth();
+                        startMonth = fieldVal.getMonth() - 2;
                         startDate = new Date(startYear, startMonth, 1);
                         document.getElementById("reportfrom").innerHTML = startDate.toISOString().slice(0, 10);
                         document.getElementById("from").value = startDate.toISOString().slice(0, 10);
