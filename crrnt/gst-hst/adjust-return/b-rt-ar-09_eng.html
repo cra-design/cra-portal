@@ -351,7 +351,7 @@
     <td>
         Sales and other revenue
     </td>
-    <td class="text-right">$35,000.00</td>
+    <td id="gst34DTO.salesAndOtherRevenue101" class="text-right">$35,000.00</td>
 </tr> 
 <tr>
         <th scope="row" class="text-nowrap col-md-lineNumber">
@@ -361,7 +361,7 @@
     <td>
         Total GST/HST new housing rebates (included in line 108)
     </td>
-    <td class="text-right">$0.00</td>
+    <td id="gst34DTO.newHousingRebates135" class="text-right">$0.00</td>
 </tr> 
 <tr>
         <th scope="row" class="text-nowrap col-md-lineNumber">
@@ -371,7 +371,7 @@
     <td>
         Deduction for pension rebate amount (included in line 108)
     </td>
-    <td class="text-right">$0.00</td>
+    <td id="gst34DTO.line136" class="text-right">$0.00</td>
 </tr> 
 <tr>
             <th scope="row" class="text-nowrap col-md-lineNumber">
@@ -401,7 +401,7 @@
     <td>
         Total GST/HST and adjustments for period
     </td>
-    <td class="text-right">$0.00</td>
+    <td id="gst34DTO.totalGSTAndAdjustments105" class="text-right">$0.00</td>
 </tr> 
 <tr>
         <th scope="row" class="text-nowrap col-md-lineNumber">
@@ -411,7 +411,7 @@
     <td>
         Total ITCs and adjustments
     </td>
-    <td class="text-right">$0.00</td>
+    <td id="gst34DTO.totalITCs108" class="text-right">$0.00</td>
 </tr> 
 <tr>
         <th scope="row" class="text-nowrap col-md-lineNumber">
@@ -421,7 +421,7 @@
     <td>
         Net tax 
     </td>
-    <td class="text-right">-$0.00</td>
+    <td id="gst34DTO.netTax109" class="text-right">-$0.00</td>
 </tr> 
 <tr>
         <th scope="row" class="text-nowrap col-md-lineNumber">
@@ -431,7 +431,7 @@
     <td>
         Instalments and other annual filer payments
     </td>
-    <td class="text-right">$0.00</td>
+    <td id="gst34DTO.instalmentCredits110" class="text-right">$0.00</td>
 </tr> 
 <tr>
         <th scope="row" class="text-nowrap col-md-lineNumber">
@@ -441,7 +441,7 @@
     <td>
         Rebates (note: rebate forms must be mailed separately)
     </td>
-    <td class="text-right">$0.00</td>
+    <td id="gst34DTO.rebatesCredits111" class="text-right">$0.00</td>
 </tr> 
 <tr>
         <th scope="row" class="text-nowrap col-md-lineNumber">
@@ -451,7 +451,7 @@
     <td>
         GST/HST due on the purchase of the real property or purchases of emission allowances
     </td>
-    <td class="text-right">$0.00</td>
+    <td id="gst34DTO.taxableRealPropertyGST205" class="text-right">$0.00</td>
 </tr> 
 <tr>
         <th scope="row" class="text-nowrap col-md-lineNumber">
@@ -461,7 +461,7 @@
     <td>
         Other GST/HST to be self-assessed
     </td>
-    <td class="text-right">$0.00</td>
+    <td id="gst34DTO.otherSelfAssessedGST405" class="text-right">$0.00</td>
 </tr> 
 <tr>
         <th scope="row" class="text-nowrap col-md-lineNumber">
@@ -471,7 +471,7 @@
     <td>
         Refund claimed 
     </td>
-    <td class="text-right">$0.00</td>
+    <td id="gst34DTO.refundClaimed114" class="text-right">$0.00</td>
 </tr> 
 <tr>
         <th scope="row" class="text-nowrap col-md-lineNumber">
@@ -481,7 +481,7 @@
     <td>
         Amount owing 
     </td>
-    <td class="text-right">$3,000.00</td>
+    <td id="gst34DTO.amountOwing" class="text-right">$3,000.00</td>
 </tr> 
 </tbody>
 </table>
@@ -609,13 +609,50 @@
             s.parentNode.insertBefore(ga, s);
         })();
 */
-    </script>
-                                <script>
-                                    $("#adjust_return").submit(function(e) { 
-                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-                                        e.preventDefault(); // Cancel the submit
-                                        return false;
-                                    });
-                                </script>
+</script>
+<script>
+        let pagelang = document.documentElement.lang, 
+            currencyFormatter = new Intl.NumberFormat(pagelang + "-CA", {
+                style: "currency",
+                currency: "CAD",
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2,
+                roundingPriority: "auto",
+                roundingMode: "trunc"
+            }), 
+            convertCurrencyStringToNumber = function convertCurrencyStringToNumber(currencyString) {
+                // Remove currency symbols, commas, and spaces
+                const cleanedString = currencyString.replace(/[^\d.]/g, '');
+
+                // Parse the cleaned string to a float
+                const numberValue = parseFloat(cleanedString);
+
+                // Return the number, or handle NaN if the conversion failed
+                return isNaN(numberValue) ? 0 : numberValue; // Return 0 or throw an error if conversion is invalid
+            }, 
+            updateFieldValues = function updateFieldValues() {
+                // Get the URLSearchParams object from the current URL's query string
+                const urlParams = new URLSearchParams(window.location.search);
+
+                // Iterate over each key-value pair in the query string
+                urlParams.forEach(function (value, key) {
+                    // Find an input element with a matching name attribute
+                    const elm = document.querySelector("#" + CSS.escape(key));
+
+                    // If a matching input element is found, update its value
+                    if (elm !== null) {
+                        elm.innerHTML = currencyFormatter.format(convertCurrencyStringToNumber(value));
+                    }
+                });
+            };
+
+        document.addEventListener("DOMContentLoaded", updateFieldValues());
+
+    $("#adjust_return").submit(function(e) { 
+        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+        e.preventDefault(); // Cancel the submit
+        return false;
+    });
+</script>
 </body>
 </html>
