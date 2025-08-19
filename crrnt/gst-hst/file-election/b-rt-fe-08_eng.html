@@ -352,7 +352,7 @@
 <br><br>
 
                         <div id="buttonsLine">
-                            <a class="btn btn-default" href="b-rt-sp-01_eng.html" role="button">Previous</a>&nbsp;
+                            <a id="prev" class="btn btn-default" href="b-rt-fe-01_eng.html" role="button">Previous</a>&nbsp;
                             <input name="button" type="submit" class="btn btn-primary" value="Submit" />
                           
                         </div>
@@ -476,6 +476,21 @@
 */
     </script>
     <script>
+        let updateFieldValues = function updateFieldValues() {
+            // Get the URLSearchParams object from the current URL's query string
+            const urlParams = new URLSearchParams(window.location.search);
+
+            // Iterate over each key-value pair in the query string
+            urlParams.forEach(function (value, key) {
+                // If a matching input element is found, update its value
+                if (key === "gst71" && value === "true") {
+                    document.getElementById("prev").href = "b-rt-sp-01_eng.html";
+                }
+            });
+        };
+
+        document.addEventListener("DOMContentLoaded", updateFieldValues());
+
         $("#gsthst_Accounting_Periods").submit(function (e) {
             let fromDate, toDate, 
                 fieldIdArr = ["FQS", "FQE", "Q1", "Q2", "Q3", "Q4", "M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9", "M10", "M11", "M12"], 
