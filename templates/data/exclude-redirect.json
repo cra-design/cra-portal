@@ -13,8 +13,16 @@
       "destination": "https://psi3b8.axshare.com/wel-01_GST_eng.html" 
     }, 
     {
+      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/about-enquiries-service.html", 
+      "destination": "https://cra-design.github.io/cra-portal/help/about-enquiries-service.html"
+    }, 
+    {
       "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/file-a-return.html", 
       "destination": "https://cra-design.github.io/cra-portal/help/file-a-return.html"
+    }, 
+    {
+      "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/answers-common-questions-goods-services-tax-harmonized-sales-tax-accounts.html", 
+      "destination": "https://cra-design.github.io/cra-portal/help/answers-common-questions-goods-services-tax-harmonized-sales-tax-accounts.html"
     }, 
     {
       "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/file-election.html", 
