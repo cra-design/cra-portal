@@ -1,3 +1,7 @@
+.pagedetails {
+    display: none;
+}
+
 #wb-info .gc-contextual {
     background: #26374a url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/landscape.png) no-repeat right bottom
 }
@@ -13,5 +17,6 @@
 }
 
 #wb-info .brand img, #wb-info .brand object, #wb-info .gc-sub-footer img, #wb-info .gc-sub-footer object {
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
