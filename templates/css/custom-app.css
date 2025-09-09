@@ -2,12 +2,8 @@
     background: #26374a url(https://www.canada.ca/etc/designs/canada/wet-boew/assets/landscape.png) no-repeat right bottom
 }
 
-#wb-info nav li {
-    margin-bottom: 0em !important;
-}
-
 #wb-info nav {
-    padding-bottom: 2em !important;
+    padding-bottom: 1em !important;
     padding-top: 2em !important;
     position: relative;
 }
