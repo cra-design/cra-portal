@@ -138,13 +138,27 @@ view-elections
 view-expected-filed-returns
 
 - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-01_eng.html
+   - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-01-02_eng.html
+   - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-01-03_eng.html
 - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02_eng.html
+   - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02-02_eng.html
+   - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02-03_eng.html
+   - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02-04_eng.html
+   - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02-05_eng.html
+   - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02-06_eng.html
+ - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02b_eng.html
 
 Help files
 
-- https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html
-- https://cra-design.github.io/cra-portal/help/electronic-rebate-forms.html
-- https://cra-design.github.io/cra-portal/help/payments-cra.html
+- https://cra-design.github.io/cra-portal/help/about-enquiries-service.html
+- https://cra-design.github.io/cra-portal/help/answers-common-questions-goods-services-tax-harmonized-sales-tax-accounts.html
 - https://cra-design.github.io/cra-portal/help/adjust-a-return.html
+- https://cra-design.github.io/cra-portal/help/electronic-rebate-forms.html
+- https://cra-design.github.io/cra-portal/help/file-a-return.html
 - https://cra-design.github.io/cra-portal/help/file-election.html
+- https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html
+- https://cra-design.github.io/cra-portal/help/help-business-account.html
+- https://cra-design.github.io/cra-portal/help/help-enquiries-service.html
+- https://cra-design.github.io/cra-portal/help/payments-cra.html
 - https://cra-design.github.io/cra-portal/help/view-expected-filed-returns.html
+
