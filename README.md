@@ -138,15 +138,15 @@ view-elections
 view-expected-filed-returns
 
 - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-01_eng.html
-   - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-01-02_eng.html
-   - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-01-03_eng.html
-- https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02_eng.html
+   - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02_eng.html
    - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02-02_eng.html
    - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02-03_eng.html
    - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02-04_eng.html
    - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02-05_eng.html
+- https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-01-02_eng.html
    - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02-06_eng.html
- - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02b_eng.html
+- https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-01-03_eng.html
+   - https://cra-design.github.io/cra-portal/crrnt/gst-hst/view-expected-filed-returns/b-rt-vr-02b_eng.html
 
 Help files
 
