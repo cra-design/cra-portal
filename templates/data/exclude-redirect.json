@@ -73,6 +73,10 @@
       "destination": "https://cra-design.github.io/cra-portal/t1portal/after-you-file.html"
     }, 
     {
+      "origin": "https://cra-design.github.io/content/canadasite/en/revenue-agency/services/e-services/digital-services-businesses/refile-online-t1-adjustments-efile-service-providers.html", 
+      "destination": "https://cra-design.github.io/cra-portal/t1portal/change-return.html"
+    }, 
+    {
       "origin": "https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/after-you-file/change-return.html", 
       "destination": "https://cra-design.github.io/cra-portal/t1portal/change-return.html"
     }, 
