@@ -1,12 +1,15 @@
 [
     {
-      "origin": "https://chpjtp.axshare.com/a-mba-08_eng.html" 
+      "origin": "https://chpjtp.axshare.com/a-mba-08_eng.html",  
+      "destination": "https://3gv9z4.axshare.com/a-mba-08_eng.html"
     }, 
     {
-      "origin": "https://chpjtp.axshare.com/a-mba-mc-1_eng.html" 
+      "origin": "https://chpjtp.axshare.com/a-mba-mc-1_eng.html", 
+      "destination": "https://3gv9z4.axshare.com/a-mba-mc-1_eng.html"
     }, 
     {
-      "origin": "https://chpjtp.axshare.com/b-rt-fr-01_eng.html" 
+      "origin": "https://chpjtp.axshare.com/b-rt-fr-01_eng.html", 
+      "destination": "https://3gv9z4.axshare.com/b-rt-fr-01_eng.html"
     }, 
     {
       "origin": "https://hmhoon.axshare.com/a-mao_a1a_eng.html"
