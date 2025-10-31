@@ -166,12 +166,12 @@
           <p>For certain tax and reporting options in your GST/HST account, you must file an election.</p>
             <form name="navURL" action="#" method="get" id="file_election">
               <fieldset class="chkbxrdio-grp">
-                <legend for="Election" class="required"> <span class="field-name">Select an election to file via web form, or "Other" to upload a completed PDF form</span>: <strong class="required" aria-hidden="true"> (required) </strong> </legend>
+                <legend for="Election" class="required"> <span class="field-name">Select an election (web forms) or "Other" to upload a PDF form</span>: <strong class="required" aria-hidden="true"> (required) </strong> </legend>
                 <div id="basic">
                   <div class="radio mrn-bttm-md">
                     <label for="option_basic1">
                       <input id="option_basic1" type="radio" name="gotoURL" value="b-rt-fe-10_eng.html" data-rule-required="true">
-                      GST20: Election for GST/HST Reporting Period <mark>(to change your reporting period)</mark></label>
+                      GST20: Election for GST/HST Reporting Period (Change your reporting period)</label>
                   </div>
                   <div class="radio mrn-bttm-md">
                     <label for="option_basic2">
@@ -196,7 +196,7 @@
                   <div class="radio mrn-bttm-md">
                     <label for="option_basic6">
                       <input id="option_basic6" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
-                      Other <mark>(a completed PDF form is required)</mark></label>
+                      Other (Completed PDF required)</label>
                   </div>
                 </div>
                 <div id="rq_slfi" class="wb-inv">
@@ -233,7 +233,7 @@
                 </div>
               </fieldset>
               <br>
-              <p><a id="rq_slfi_toggle" href="#">View the list of web forms for Selected Listed Financial Institutions (for GST/HST and QST purposes)</a></p>
+              <p><a id="rq_slfi_toggle" href="#">View web forms for Selected Listed Financial Institutions (for GST/HST and QST purposes)</a></p>
               <h2>Confirmation of receipt</h2>
               <p>After you successfully submit your election, you will receive a confirmation number. This confirmation number is your proof that the Canada Revenue Agency (CRA) has received your election. Print the page with your confirmation number and keep it with your records.</p>
               <h2>Non-responsibility</h2>
@@ -336,11 +336,11 @@
 if (document.getElementById("rq_slfi").classList.contains("wb-inv") === true) {
   document.getElementById("rq_slfi").classList.remove("wb-inv")
   document.getElementById("basic").classList.add("wb-inv")
-  document.getElementById("rq_slfi_toggle").innerHTML = "Select this link to go back to the basic version of this page";
+  document.getElementById("rq_slfi_toggle").innerHTML = "Return to view non-SLFI specific web forms";
 } else {
   document.getElementById("rq_slfi").classList.add("wb-inv")
   document.getElementById("basic").classList.remove("wb-inv")
-  document.getElementById("rq_slfi_toggle").innerHTML = "Select this link to visit the RQ SLFI version of this page";
+  document.getElementById("rq_slfi_toggle").innerHTML = "View web forms for Selected Listed Financial Institutions (for GST/HST and QST purposes)";
 }
 }
 document.getElementById("rq_slfi_toggle").addEventListener("click", toggleRadio, false);    
