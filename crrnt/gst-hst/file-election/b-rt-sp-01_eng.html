@@ -166,7 +166,7 @@
             <p>For certain tax and reporting options in your GST/HST account, you must file an election.</p>
             <form name="navURL" action="#" method="get" id="file_election">
               <fieldset class="chkbxrdio-grp">
-                <legend for="Election" class="required"> <span class="field-name">Select an election for web forms or Other to upload a PDF form</span>: <strong class="required" aria-hidden="true"> (required) </strong> </legend>
+                <legend for="Election" class="required"> <span class="field-name">Select an election for a web form or Other to upload a PDF form</span>: <strong class="required" aria-hidden="true"> (required) </strong> </legend>
                 <div id="basic">
                   <div class="radio mrn-bttm-md">
                     <label for="option_basic1">
@@ -208,22 +208,22 @@
                   <div class="radio mrn-bttm-md">
                     <label for="option_rq2">
                       <input id="option_rq2" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
-                      GST7220: Election for GST/HST Reporting Period for a Selected Listed Financial Institution </label>
+                      GST7220: Election for GST/HST Reporting Period for a <abbr title="Selected Listed Financial Institution">SLFI</abbr> </label>
                   </div>
                   <div class="radio mrn-bttm-md">
                     <label for="option_rq3">
                       <input id="option_rq3" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
-                      GST7270: Election or Revocation of an Election to Change a GST/HST and QST Fiscal Year for a Selected Listed Financial Institution </label>
+                      GST7270: Election or Revocation of an Election to Change a GST/HST and QST Fiscal Year for a <abbr title="Selected Listed Financial Institution">SLFI</abbr> </label>
                   </div>
                   <div class="radio mrn-bttm-md">
                     <label for="option_rq4">
                       <input id="option_rq4" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
-                      GST7271: Notification of GST/HST and QST Accounting Periods for Certain Selected Listed Financial Institutions </label>
+                      GST7271: Notification of GST/HST and QST Accounting Periods for Certain <abbr title="Selected Listed Financial Institutions">SLFIs</abbr> </label>
                   </div>
                   <div class="radio mrn-bttm-md">
                     <label for="option_rq5">
                       <input id="option_rq5" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
-                      RC7296: Elections or Revocation of the Elections for a Qualifying Group That Includes a Selected Listed Financial Institution to Treat Certain Taxable Supplies as Having Been Made for Nil Consideration for GST/HST and/or QST Purposes </label>
+                      RC7296: Elections or Revocation of the Elections for a Qualifying Group That Includes a <abbr title="Selected Listed Financial Institution">SLFI</abbr> to Treat Certain Taxable Supplies as Having Been Made for Nil Consideration for GST/HST and/or QST Purposes </label>
                   </div>
                   <div class="radio mrn-bttm-md">
                     <label for="option_rq6">
@@ -336,11 +336,11 @@
 if (document.getElementById("rq_slfi").classList.contains("wb-inv") === true) {
   document.getElementById("rq_slfi").classList.remove("wb-inv")
   document.getElementById("basic").classList.add("wb-inv")
-  document.getElementById("rq_slfi_toggle").innerHTML = "Return to view non-SLFI specific web forms";
+  document.getElementById("rq_slfi_toggle").innerHTML = "Return to view non-<abbr title=\"Selected Listed Financial Institution\">SLFI</abbr> specific web forms";
 } else {
   document.getElementById("rq_slfi").classList.add("wb-inv")
   document.getElementById("basic").classList.remove("wb-inv")
-  document.getElementById("rq_slfi_toggle").innerHTML = "View web forms for Selected Listed Financial Institutions (for GST/HST and QST purposes)";
+  document.getElementById("rq_slfi_toggle").innerHTML = "View web forms for Selected Listed Financial Institutions (SLFI) – for GST/HST and QST purposes";
 }
 }
 document.getElementById("rq_slfi_toggle").addEventListener("click", toggleRadio, false);    
