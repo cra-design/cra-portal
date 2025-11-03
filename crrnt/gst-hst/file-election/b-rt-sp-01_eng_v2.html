@@ -169,14 +169,14 @@
                 <legend for="slfichoice"> <span class="field-name">Select the Selected Listed Financial Institutions (SLFI) group</span>:</legend>
                 <div id="slfiradio">
                   <div class="radio mrn-bttm-md">
-                    <label for="slfi">
-                      <input id="slfi" type="radio" name="slfichoice" value="0" checked="checked" data-rule-required="true">
-                      View elections for <abbr title="Selected Listed Financial Institution">SLFI</abbr></label>
-                  </div>
-                  <div class="radio mrn-bttm-md">
                     <label for="nonslfi">
                       <input id="nonslfi" type="radio" name="slfichoice" value="1" data-rule-required="true">
                       View non-<abbr title="Selected Listed Financial Institution">SLFI</abbr>-specific elections</label>
+                  </div>
+                  <div class="radio mrn-bttm-md">
+                    <label for="slfi">
+                      <input id="slfi" type="radio" name="slfichoice" value="0" checked="checked" data-rule-required="true">
+                      View elections for <abbr title="Selected Listed Financial Institution">SLFI</abbr></label>
                   </div>
                 </div>
               </fieldset>
@@ -350,10 +350,10 @@ function toggleRadio() {
 }
 
         $("#slfiradio").on("change", "#slfi, #nonslfi", function () {
-  if (document.getElementById("nonslfi").checked === true) {
+  if (document.getElementById("slfi").checked === true) {
     document.getElementById("rq_slfi").classList.remove("wb-inv")
     document.getElementById("basic").classList.add("wb-inv")
-  } else if (document.getElementById("slfi").checked === true) {
+  } else if (document.getElementById("nonslfi").checked === true) {
     document.getElementById("rq_slfi").classList.add("wb-inv")
     document.getElementById("basic").classList.remove("wb-inv")
   }
