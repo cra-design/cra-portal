@@ -169,19 +169,20 @@
     
 <form name="navURL" action="#" method="get" id="gsthstnetfileform">
                             <fieldset class="legend-brdr-bttm">
-                            <legend class="h2 mrgn-tp-0 mrgn-lft-0">Select or enter your reporting period&nbsp;<a class="mrgn-lft-md small" href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/gst-hst-electronic-filing.htmls-businesses/business-account/gst-hst-electronic-filing.html" target="helpWindow" title="Help - Opens in a new window"><span class="glyphicon glyphicon-question-sign"></span></a></legend>
+                            <legend class="h2 mrgn-tp-0 mrgn-lft-0">Select or enter your reporting period&nbsp;<a href="#reportperiod-popup" aria-controls="reportperiod-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a></legend>
                             <div class="clearfix"></div>
                                 <div>
                                     <label for="startdate" class="required"><span class="field-name">From</span><strong class="required" aria-hidden="true">&nbsp;(required)</strong></label>
                                     <div>
-                                        <input id="startdate" class="form-control input-sm" name="startdate" type="date" required="required"/>
+                                        <input id="startdate" class="form-control input-sm" name="startdate" type="date" data-rule-dateISO="true" required="required"/>
                                     </div>
                                 </div>
+                                <div class="wb-frmvld">
                                 <br>
                                 <div>
                                     <label for="enddate" class="required"><span class="field-name">To</span><strong class="required" aria-hidden="true">&nbsp;(required)</strong></label>
                                     <div>
-                                        <input id="enddate" class="form-control input-sm" name="enddate" type="date" required="required"/>
+                                        <input id="enddate" class="form-control input-sm" name="enddate" type="date" data-rule-dateISO="true" required="required"/>
                                     </div>
                                 </div>
                             </fieldset>
@@ -264,20 +265,28 @@
 
                             <div id="buttonsLine">
                                 <a class="btn btn-default" href="b-rt-fr-00_eng.html" role="button">Previous</a>
-                                <a class="btn btn-primary" type="submit" href="b-rt-fr-08_eng.html" role="button">Next</a>
+                                <input name="button" type="submit" class="btn btn-primary" value="Next">
                             </div>
 
     </form>
 
         </div>
         </div>
+<section id="reportperiod-popup" class="mfp-hide modal-dialog modal-content overlay-def">
+	<header class="modal-header">
+		<h2 class="modal-title">Reporting period</h2>
+	</header>
+	<div class="modal-body">
+		<div data-ajax-replace="http://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#rp"></div>
+	</div>
+</section>
 
 <section id="situation-popup" class="mfp-hide modal-dialog modal-content overlay-def">
 	<header class="modal-header">
 		<h2 class="modal-title">Situations</h2>
 	</header>
 	<div class="modal-body">
-		...
+		<div data-ajax-replace="http://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#sls"></div>
 	</div>
 </section>
 <section id="form1-popup" class="mfp-hide modal-dialog modal-content overlay-def">
@@ -285,15 +294,15 @@
 		<h2 class="modal-title">Forms</h2>
 	</header>
 	<div class="modal-body">
-		...
+		<div data-ajax-replace="http://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#gstform"></div>
 	</div>
 </section>
 <section id="schedule-popup" class="mfp-hide modal-dialog modal-content overlay-def">
 	<header class="modal-header">
-		<h2 class="modal-title">schedules you can file with your return</h2>
+		<h2 class="modal-title">Schedules you can file with your return</h2>
 	</header>
 	<div class="modal-body">
-		...
+		<div data-ajax-replace="http://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#sch"></div>
 	</div>
 </section>
 
@@ -385,6 +394,7 @@
                                     $("#gsthstnetfileform").submit(function(e) { 
                                         $(".wb-frmvld").trigger("wb-init.wb-frmvld");
                                         e.preventDefault(); // Cancel the submit
+                                        gooto("b-rt-fr-08_eng.html");
                                         return false;
                                     });
                                 </script>
