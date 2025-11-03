@@ -192,12 +192,12 @@
                                 </label>&nbsp;<a href="#situation-popup" aria-controls="situation-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
                                 <div class="checkbox">
                                     <label for="label.filingBti">
-                                        <input type="checkbox" name="gotoURL1" value="/cra-portal/exit.html?uri=b-rt-ar-05_eng.html" id="label.filingBti" />I am filing a nil return (all fields are $0).
+                                        <input type="checkbox" name="group1" value="/cra-portal/exit.html?uri=b-rt-ar-05_eng.html" id="label.filingBti" />I am filing a nil return (all fields are $0).
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label for="label.filingRitc" class="mrgn-right-md">
-                                        <input type="checkbox" name="gotoURL1" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="label.filingRitc" />I want to report one or more of the following types of sales on my return:
+                                        <input type="checkbox" name="group1" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="label.filingRitc" />I want to report one or more of the following types of sales on my return:
                                         <ul>
                                             <li>Exempt supplies, zero-rated exports, goodwill, financial services, sales of capital real property, and supplies made outside of Canada</li>
                                             <li>Taxable sales of my associates (including zero-rated supplies) made in Canada</li>
@@ -246,17 +246,17 @@
                                 </label>&nbsp;<a href="#schedule-popup" aria-controls="schedule-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
                                 <div class="checkbox">
                                     <label for="label.group3-1" class="mrgn-rght-md">
-                                        <input type="checkbox" name="group2" value="/cra-portal/exit.html?uri=b-rt-ar-05_eng.html" id="label.group3-1" />Schedule B - Calculation of recaptured input tax credits for the provincial portion of the HST on specified property or services
+                                        <input type="checkbox" name="group3" value="/cra-portal/exit.html?uri=b-rt-ar-05_eng.html" id="label.group3-1" />Schedule B - Calculation of recaptured input tax credits for the provincial portion of the HST on specified property or services
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label for="label.group3-2" class="mrgn-rght-md">
-                                        <input type="checkbox" name="group2" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="label.group3-2" />Schedule C - Reconciliation of recaptured input tax credits
+                                        <input type="checkbox" name="group3" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="label.group3-2" />Schedule C - Reconciliation of recaptured input tax credits
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label for="label.group3-3" class="mrgn-rght-md">
-                                        <input type="checkbox" name="group2" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="label.group3-3" />Form GST106, Information on claims paid or credited for foreign conventions
+                                        <input type="checkbox" name="group3" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="label.group3-3" />Form GST106, Information on claims paid or credited for foreign conventions
                                     </label>
                                 </div>
                             </div>
@@ -277,7 +277,7 @@
 		<h2 class="modal-title">Reporting period</h2>
 	</header>
 	<div class="modal-body">
-		<div data-ajax-replace="http://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#rp"></div>
+		<div data-ajax-replace="https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#rp"></div>
 	</div>
 </section>
 
@@ -286,7 +286,7 @@
 		<h2 class="modal-title">Situations</h2>
 	</header>
 	<div class="modal-body">
-		<div data-ajax-replace="http://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#sls"></div>
+		<div data-ajax-replace="https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#sls"></div>
 	</div>
 </section>
 <section id="form1-popup" class="mfp-hide modal-dialog modal-content overlay-def">
@@ -294,7 +294,7 @@
 		<h2 class="modal-title">Forms</h2>
 	</header>
 	<div class="modal-body">
-		<div data-ajax-replace="http://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#gstform"></div>
+		<div data-ajax-replace="https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#gstform"></div>
 	</div>
 </section>
 <section id="schedule-popup" class="mfp-hide modal-dialog modal-content overlay-def">
@@ -302,7 +302,7 @@
 		<h2 class="modal-title">Schedules you can file with your return</h2>
 	</header>
 	<div class="modal-body">
-		<div data-ajax-replace="http://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#sch"></div>
+		<div data-ajax-replace="https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#sch"></div>
 	</div>
 </section>
 
@@ -392,11 +392,24 @@
     </script> 
 <script>
                                     $("#gsthstnetfileform").submit(function(e) { 
+            let fromDate, toDate, 
+                isfieldNotEmpty = false, 
+                checkfieldNotEmpty = function isfieldNotEmpty(elm) {
+                    return document.getElementById(elm).value !== "";
+                };
                                         $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-                                        e.preventDefault(); // Cancel the submit
+            if (document.getElementById("startdate").value !== "") {
+                fromDate = new Date(document.getElementById("startdate").value);
+            }
+            if (document.getElementById("enddate").value !== "") {
+                toDate = new Date(document.getElementById("enddate").value);
+            }
+            if (!toDate || fromDate > toDate) {
+                e.preventDefault(); // Cancel the submit
+                return false;
+            }
                                         gooto("b-rt-fr-08_eng.html");
-                                        return false;
-                                    });
+                                      });
                                 </script>
 </body>
 </html>
