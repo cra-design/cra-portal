@@ -169,7 +169,7 @@
     
 <form name="navURL" action="b-rt-fr-08_eng.html" method="get" id="gsthstnetfileform">
                             <fieldset class="legend-brdr-bttm">
-                            <legend class="h2 mrgn-tp-0 mrgn-lft-0">Select or enter your reporting period&nbsp;<a href="#reportperiod-popup" aria-controls="reportperiod-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a></legend>
+                            <legend class="h2 mrgn-tp-0 mrgn-lft-0">Select or enter your reporting period&nbsp;<a href="#reportperiod-popup" aria-controls="reportperiod-popup" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-question-sign"></span></a></legend>
                             <div class="clearfix"></div>
                                 <div class="form-group mrgn-lft-md">
                                     <label for="startdate" class="required"><span class="field-name">From</span><strong class="required" aria-hidden="true">&nbsp;(required)</strong></label>
@@ -183,7 +183,7 @@
                             <div class="form-group mrgn-tp-lg">
                                 <label for="dateSelected">
                                     Select a situation, if it applies:
-                                </label>&nbsp;<a href="#situation-popup" aria-controls="situation-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
+                                </label>&nbsp;<a href="#situation-popup" aria-controls="situation-popup" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
                                 <div class="checkbox">
                                     <label for="label.filingBti">
                                         <input type="checkbox" name="group1" value="/cra-portal/exit.html?uri=b-rt-ar-05_eng.html" id="label.filingBti" />I am filing a nil return (all fields are $0).
@@ -205,7 +205,7 @@
                             <div class="form-group mrgn-tp-lg">
                                 <label for="dateSelected">
                                     Select the rebates you want to file with your return:
-                                </label>&nbsp;<a href="#form1-popup" aria-controls="form1-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
+                                </label>&nbsp;<a href="#form1-popup" aria-controls="form1-popup" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
                                 <div class="checkbox">
                                     <label for="label.group2-1" class="mrgn-rght-md">
                                         <input type="checkbox" name="group2" value="/cra-portal/exit.html?uri=b-rt-ar-05_eng.html" id="label.group2-1" />Ontario First Nations point-of-sale relief (GST189, reason code 23)
@@ -237,7 +237,7 @@
                             <div class="form-group mrgn-tp-lg">
                                 <label for="dateSelected">
                                     Select the schedules you want to file with your return:
-                                </label>&nbsp;<a href="#schedule-popup" aria-controls="schedule-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
+                                </label>&nbsp;<a href="#schedule-popup" aria-controls="schedule-popup" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
                                 <div class="checkbox">
                                     <label for="label.group3-1" class="mrgn-rght-md">
                                         <input type="checkbox" name="group3" value="/cra-portal/exit.html?uri=b-rt-ar-05_eng.html" id="label.group3-1" />Schedule B - Calculation of recaptured input tax credits for the provincial portion of the HST on specified property or services
@@ -266,7 +266,7 @@
 
         </div>
         </div>
-<section id="reportperiod-popup" class="mfp-hide modal-dialog modal-content overlay-def">
+<section id="reportperiod-popup" class="wb-overlay modal-content overlay-def wb-popup-mid">
 	<header class="modal-header">
 		<h2 class="modal-title">Reporting period dates</h2>
 	</header>
@@ -275,7 +275,7 @@
 	</div>
 </section>
 
-<section id="situation-popup" class="mfp-hide modal-dialog modal-content overlay-def">
+<section id="situation-popup" class="wb-overlay modal-content overlay-def wb-popup-mid">
 	<header class="modal-header">
 		<h2 class="modal-title">Sales and other revenue</h2>
 	</header>
@@ -283,7 +283,7 @@
 		<div data-ajax-replace="https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#sor"></div>
 	</div>
 </section>
-<section id="form1-popup" class="mfp-hide modal-dialog modal-content overlay-def">
+<section id="form1-popup" class="wb-overlay modal-content overlay-def wb-popup-mid">
 	<header class="modal-header">
 		<h2 class="modal-title">Forms</h2>
 	</header>
@@ -291,7 +291,7 @@
 		<div data-ajax-replace="https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#gstform"></div>
 	</div>
 </section>
-<section id="schedule-popup" class="mfp-hide modal-dialog modal-content overlay-def">
+<section id="schedule-popup" class="wb-overlay modal-content overlay-def wb-popup-mid">
 	<header class="modal-header">
 		<h2 class="modal-title">Schedules you can file with your return</h2>
 	</header>
