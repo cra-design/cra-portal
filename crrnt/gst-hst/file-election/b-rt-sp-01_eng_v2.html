@@ -11,6 +11,7 @@
 <meta name="format-detection" content="telephone=no">
 <!--[if gte IE 9 | !IE ]><!-->
 <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" />
+<!--    <link rel="stylesheet" href="css/wet-boew.min.css" />--> 
 <!--<![endif]-->
 <link rel="stylesheet" href="https://cra-design.github.io/cra-portal/templates/css/theme.css" />
 <link rel="stylesheet" href="https://cra-design.github.io/cra-portal/templates/css/myba.css" />
@@ -85,7 +86,7 @@
   <li class="wb-slc"> <a class="wb-sl" href="#wb-cont">Skip to main content</a> </li>
   <li class="wb-slc visible-sm visible-md visible-lg"> <a class="wb-sl" href="#wb-info">Skip to "About this site"</a> </li>
   <li class="wb-slc visible-md visible-lg"> <a class="wb-sl" href="#wb-sec">Skip to section menu</a> </li>
-  <li class="wb-slc"><a class="wb-sl" rel="alternate" href="">Basic HTML version</a></li>
+  <li class="wb-slc"><a class="wb-sl" rel="alternate" href="?wbdisable=true">Basic HTML version</a></li>
 </ul>
 
 <!-- START of github only template section -->
@@ -147,9 +148,8 @@
 <div class="container">
   <div class="row">
     <main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">
-      <div>
-        <h1 id="wb-cont" property="name">File a return</h1>
-        <br>
+      <div class="wb-frmvld">
+        <h1 id="wb-cont" property="name">File an election</h1>
         <div class="mrgn-bttm-md"> 
           
           <!-- BN9 and Legal Name -->
@@ -161,51 +161,113 @@
           </dl>
         </div>
         <br>
-        <div>
+        <div id="slfiradio">
+          <div class="radio mrn-bttm-md">
+            <label for="slfi">
+              <input id="slfi" type="radio" name="slfichoice" value="0" data-rule-required="true">
+              View elections for Selected Listed Financial Institutions (SLFI)</label>
+          </div>
+          <div class="radio mrn-bttm-md">
+            <label for="nonslfi">
+              <input id="nonslfi" type="radio" name="slfichoice" value="1" data-rule-required="true">
+              Return to view non-<abbr title="Selected Listed Financial Institution">SLFI</abbr>-specific elections</label>
+          </div>
+        </div>
+        <div class="form-group">
           <div class="mrgn-bttm-md wb-frmvld">
-            <form name="navURL" action="#" method="get" id="filereturnform">
+            <p>For certain GST/HST or QST tax and reporting options, you must file an <span class="nowrap">election. <a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/file-election.html" target="helpWindow" title="Help - Opens in a new window"><span class="glyphicon glyphicon-question-sign"></span></a></span></p>
+            <form name="navURL" action="#" method="get" id="file_election">
               <fieldset class="chkbxrdio-grp">
-                <legend class="required"> <span class="field-name">Select your return option</span>: <strong class="mrgn-rght-md required" aria-hidden="true">(required)</strong><a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/file-a-return.html" target="helpWindow" title="Help - Opens in a new window"><span class="glyphicon glyphicon-question-sign"></span></a></legend>
-                <div class="radio">
-                  <label for="option1">
-                    <input id="option1" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/crrnt/gst-hst/file-return/b-rt-fr-01_eng.html" data-rule-required="true">
-                    Goods and Services Tax/Harmonized Sales Tax (GST/HST) Return for Registrants (GST34)<br>
-                  </label>
+                <legend for="Election" class="required"> <span class="field-name">Select either an election for a web form or Other to upload a PDF form</span>: <strong class="required" aria-hidden="true"> (required) </strong> <a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/file-election.html#lctns_wbfrm" target="helpWindow" title="Help - Opens in a new window"><span class="glyphicon glyphicon-question-sign"></span></a> </legend>
+                <div id="basic">
+                  <div class="radio mrn-bttm-md">
+                    <label for="option_basic1">
+                      <input id="option_basic1" type="radio" name="gotoURL" value="b-rt-fe-10_eng.html" data-rule-required="true">
+                      GST20: Election for GST/HST Reporting Period (Change your reporting period)</label>
+                  </div>
+                  <div class="radio mrn-bttm-md">
+                    <label for="option_basic2">
+                      <input id="option_basic2" type="radio" name="gotoURL" value="b-rt-fe-01_eng.html" data-rule-required="true">
+                      GST70: Election or Revocation of an Election to Change a GST/HST Fiscal Year </label>
+                  </div>
+                  <div class="radio mrn-bttm-md">
+                    <label for="option_basic3">
+                      <input id="option_basic3" type="radio" name="gotoURL" value="b-rt-fe-08_eng.html?gst71=true" data-rule-required="true">
+                      GST71: Notification of GST/HST Accounting Periods </label>
+                  </div>
+                  <div class="radio mrn-bttm-md">
+                    <label for="option_basic4">
+                      <input id="option_basic4" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
+                      GST74: Election and Revocation of an Election to Use the Quick Method of Accounting </label>
+                  </div>
+                  <div class="radio mrn-bttm-md">
+                    <label for="option_basic5">
+                      <input id="option_basic5" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
+                      RC4616: Election or Revocation of an Election for Closely Related Corporations and/or Canadian Partnerships to Treat Certain Taxable Supplies as Having Been Made for Nil Consideration for GST/HST Purposes </label>
+                  </div>
+                  <div class="radio mrn-bttm-md">
+                    <label for="option_basic6">
+                      <input id="option_basic6" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
+                      Other (Completed PDF required)</label>
+                  </div>
                 </div>
-                <div class="radio">
-                  <label for="option2">
-                    <input id="option2" type="radio" name="gotoURL" value="/cra-portal/exit.html?uri=b-rt-fC-01_eng.html&pagetitle=Information%20on%20Claims%20Paid%20or%20Credited%20for%20Foreign%20Conventions%20%28GST106%29" data-rule-required="true">
-                    Information on Claims Paid or Credited for Foreign Conventions (GST106) </label>
-                </div>
-                <div class="radio">
-                  <label for="option3">
-                    <input id="option3" type="radio" name="gotoURL" value="/cra-portal/exit.html?uri=b-rt-fr-08-rq_eng.html&pagetitle=Goods%20and%20Services%20Tax%2FHarmonized%20Sales%20Tax%20%28GST%2FHST%29%20and%20Qu%C3%A9bec%20Sales%20Tax%20%28QST%29%20Return%20for%20Selected%20Listed%20Financial%20Institutions%20%28RC7200%29" data-rule-required="true">
-                    Goods and Services Tax/Harmonized Sales Tax (GST/HST) and Québec Sales Tax (QST) Return for Selected Listed Financial Institutions (RC7200) </label>
+                <div id="rq_slfi" class="wb-inv">
+                  <div class="radio mrn-bttm-md">
+                    <label for="option_rq2">
+                      <input id="option_rq2" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
+                      GST7220: Election for GST/HST Reporting Period for a <abbr title="Selected Listed Financial Institution">SLFI</abbr> (Change your reporting period)</label>
+                  </div>
+                  <div class="radio mrn-bttm-md">
+                    <label for="option_rq1">
+                      <input id="option_rq1" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
+                      GST7220-1: Notice of Revocation of an Election for GST/HST and QST Reporting Period by a <abbr title="Selected Listed Financial Institution">SLFI</abbr> </label>
+                  </div>
+                  <div class="radio mrn-bttm-md">
+                    <label for="option_rq3">
+                      <input id="option_rq3" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
+                      GST7270: Election or Revocation of an Election to Change a GST/HST and QST Fiscal Year for a <abbr title="Selected Listed Financial Institution">SLFI</abbr> </label>
+                  </div>
+                  <div class="radio mrn-bttm-md">
+                    <label for="option_rq4">
+                      <input id="option_rq4" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
+                      GST7271: Notification of GST/HST and QST Accounting Periods for Certain <abbr title="Selected Listed Financial Institutions">SLFIs</abbr> </label>
+                  </div>
+                  <div class="radio mrn-bttm-md">
+                    <label for="option_rq5">
+                      <input id="option_rq5" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
+                      RC7296: Elections or Revocation of the Elections for a Qualifying Group That Includes a <abbr title="Selected Listed Financial Institution">SLFI</abbr> to Treat Certain Taxable Supplies as Having Been Made for Nil Consideration for GST/HST and/or QST Purposes </label>
+                  </div>
+                  <div class="radio mrn-bttm-md">
+                    <label for="option_rq6">
+                      <input id="option_rq6" type="radio" name="gotoURL" value="https://cra-design.github.io/cra-portal/exit.html" data-rule-required="true">
+                      Other (Completed PDF required)</label>
+                  </div>
                 </div>
               </fieldset>
-              <h2 class="h4">Security, privacy, and non-responsibility</h2>
-              <p>Read the CRA's statements on <a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/file-a-gst-hst-return-rebate-election-electronically.html#h_4" rel="noopener noreferrer" target="_blank">Security, privacy, and non-responsibility</a> for GST/HST electronic services.</p>
-              <h2 class="h4">Confirmation of Receipt</h2>
-              <p class="mrgn-bttm-lg">After you successfully submit your return and any applicable rebates, you will receive a <strong>confirmation number</strong>.</p>
-              <div id="buttonsLine"> <a class="btn btn-default" href="https://chpjtp.axshare.com/a-mba-08_eng.html" role="button">Return to homepage</a>&nbsp;
-                <input name="button" id="nextBtn" type="submit" class="btn btn-primary" value="Next" />
+              <br>
+              <h2>Confirmation of receipt</h2>
+              <p>After you successfully submit your election, you will receive a confirmation number. This confirmation number is your proof that the Canada Revenue Agency (CRA) has received your election. Print the page with your confirmation number and keep it with your records.</p>
+              <h2>Non-responsibility</h2>
+              <p>The CRA has taken all reasonable steps to ensure the security of this Web site. We have used sophisticated encryption technology and incorporated other procedures to protect your personal information at all times. However, the Internet is a public network and there is the remote possibility of data security violations. In the event of such occurrences, the CRA is not responsible for any damages you may experience as a result.</p>
+              <div id="buttonsLine"> <a class="btn btn-default" href="http://www.axshare.com/a-mba-08_eng.html" role="button">Return to homepage</a>&nbsp;
+                <input name="button" type="submit" class="btn btn-primary" value="Next" />
               </div>
             </form>
           </div>
         </div>
+        <br>
+        <dl class="dl-inline brdr-0">
+          <dt>Screen ID:&nbsp;</dt>
+          <dd> B-RT-SP-01 </dd>
+        </dl>
+        <!--<div class="clearfix hidden-print"></div>-->
+        <dl id="wb-dtmd" property="dateModified">
+          <dt>Date modified: </dt>
+          <dd>
+            <time>YYYY-MM-DD</time>
+          </dd>
+        </dl>
       </div>
-      <br>
-      <dl class="dl-inline brdr-0">
-        <dt>Screen ID:&nbsp;</dt>
-        <dd> B-RT-FR-00 </dd>
-      </dl>
-      <!--<div class="clearfix hidden-print"></div>-->
-      <dl id="wb-dtmd" property="dateModified">
-        <dt>Date modified: </dt>
-        <dd>
-          <time>YYYY-MM-DD</time>
-        </dd>
-      </dl>
     </main>
     <nav class="wb-sec col-md-3 col-md-pull-9" typeof="SiteNavigationElement" id="wb-sec" role="navigation">
       <h2 id="wb-sec-h" class="wb-inv"> Secondary menu </h2>
@@ -213,8 +275,8 @@
         <li>
           <h3 class="wb-navcurr"> <a href="https://chpjtp.axshare.com/a-mba-08_eng.html">My Business Account</a> </h3>
           <ul class="list-group menu list-unstyled">
-            <h3 class="wb-navcurr">File a return</h3>
-            <!--<li><a class="list-group-item" href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/file-a-return.html" target="_blank">Help</a></li>-->
+            <h3 class="wb-navcurr">File an election</h3>
+            <!--<li><a class="list-group-item" href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/file-election.html" target="_blank">Help</a></li>-->
           </ul>
         </li>
       </ul>
@@ -281,7 +343,23 @@
 */
     </script> 
 <script>
-                                    $("#filereturnform").submit(function(e) { 
+function toggleRadio() {
+}
+
+        $("#slfiradio").on("change", "#slfi, #nonslfi", function () {
+  if (document.getElementById("slfi").checked === true) {
+    document.getElementById("rq_slfi").classList.remove("wb-inv")
+    document.getElementById("basic").classList.add("wb-inv")
+  } else if (document.getElementById("nonslfi").checked === true) {
+    document.getElementById("rq_slfi").classList.add("wb-inv")
+    document.getElementById("basic").classList.remove("wb-inv")
+  }
+        });
+
+document.getElementById("rq_slfi_toggle").addEventListener("click", toggleRadio, false);    
+    </script> 
+<script>
+                                    $("#file_election").submit(function(e) { 
                                         $(".wb-frmvld").trigger("wb-init.wb-frmvld");
                                         radioURL(document.navURL.gotoURL);
                                         e.preventDefault(); // Cancel the submit

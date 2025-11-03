@@ -92,7 +92,7 @@ flowchart TD
     click AR08R "https://cra-design.github.io/cra-portal/crrnt/gst-hst/adjust-return/b-rt-ar-08r_eng.html"
     click AR09 "https://cra-design.github.io/cra-portal/crrnt/gst-hst/adjust-return/b-rt-ar-09_eng.html"
     click FR08 "https://cra-design.github.io/cra-portal/crrnt/gst-hst/file-return/b-rt-fr-08_eng.html"
-    click FR08R "https://cra-design.github.io/cra-portal/crrnt/gst-hst/file-return/b-rt-fr-08R_eng.html"
+    click FR08R "https://cra-design.github.io/cra-portal/crrnt/gst-hst/file-return/b-rt-fr-08r_eng.html"
     click FR09 "https://cra-design.github.io/cra-portal/crrnt/gst-hst/file-return/b-rt-fr-09_eng.html"
     click FE01 "https://cra-design.github.io/cra-portal/crrnt/gst-hst/file-election/b-rt-fe-01_eng.html"
     click FE08 "https://cra-design.github.io/cra-portal/crrnt/gst-hst/file-election/b-rt-fe-08_eng.html"
