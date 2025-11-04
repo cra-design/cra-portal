@@ -173,33 +173,39 @@
                 <option value="2024-09-30">2024-09-30</option>
                 <option value="2024-03-31">2024-03-31</option>
               </select>
-              <p>(Only eligible returns are listed. Find out which returns are eligible for adjustment.) &nbsp;<a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account/adjust-a-return.html#lgblty" target="helpWindow" title="Help - Opens in a new window - Eligible returns"><span class="glyphicon glyphicon-question-sign"></span></a></p>
+              <p>(Only eligible returns are listed. Find out when returns are not eligible for adjustment.) &nbsp;<a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account/adjust-a-return.html#lgblty" target="helpWindow" title="Help - Opens in a new window - Eligible returns"><span class="glyphicon glyphicon-question-sign"></span></a></p>
             </div>
             <div class="form-group mrgn-tp-lg">
-              <h2 class="h3">Adding Schedule B (if not filed with your original return)</h2>
-              <div class="checkbox">
-                <label for="schedb">
-                  <input type="checkbox" name="option1" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="schedb" />
-                  I want to add <strong>Schedule B (Recaptured input tax credits)</strong> as part of my adjustment request &nbsp;<a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account/adjust-a-return.html#ddsc" target="helpWindow" title="Help - Opens in a new window - Adding a schedule"><span class="glyphicon glyphicon-question-sign"></span></a></label>
-              </div>
+            <!--<h2 class="h3">Adding Schedule B (if not filed with your original return)</h2>-->
+            <div class="checkbox">
+              <label for="filed_dflt">
+                <input type="checkbox" name="option1" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="filed_dflt" />
+                I want to adjust amounts reported in my original return (default)
+                <mark>Checked?</mark>
+              </label>
             </div>
+            <div class="checkbox">
+              <label for="schedb">
+                <input type="checkbox" name="option1" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="schedb" />
+                I want to add a Schedule B (Recaptured input tax credits) that was not included in the original return &nbsp;<a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account/adjust-a-return.html#ddsc" target="helpWindow" title="Help - Opens in a new window - Adding a schedule"><span class="glyphicon glyphicon-question-sign"></span></a></label>
+            </div>
+            <!--</div>--> 
             
             <!-- PSL26365 - Expansion of line 101 -->
-            <h2 class="h3">Types of sales (optional breakdown)</h2>
-            <div class="checkbox mrgn-tp-lg">
+            <div class="checkbox">
               <label for="reportTypeOfSales">
-                <input type="checkbox" name="option2" value="b-rt-ar-08_eng.html" id="reportTypeOfSales" />
-                I want to report additional details on types of sales on my adjusted return: &nbsp;<a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/gst-hst-electronic-filing.html#sls" target="helpWindow" title="Help - Opens in a new window - Sales and other revenue"><span class="glyphicon glyphicon-question-sign"></span></a></label>
+                <input type="checkbox" name="option2" value="/cra-portal/exit.html?uri=b-rt-ar-08_eng.html" id="reportTypeOfSales" />
+                I want to provide additional details on types of sales (used to determine reporting periods): &nbsp;<a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/gst-hst-electronic-filing.html#sls" target="helpWindow" title="Help - Opens in a new window - Sales and other revenue"><span class="glyphicon glyphicon-question-sign"></span></a></label>
               <ul>
-                <li>Exempt supplies, zero-rated exports, goodwill, financial services, sales of capital real property, and supplies made outside of Canada</li>
-                <li>Taxable sales of my associates (including zero-rated supplies) made in Canada</li>
+                <li>Includes exempt supplies, zero-rated exports, goodwill, financial services, capital real property, or your associates’ taxable sales</li>
+                <li>Do not check this box if you use the quick method of accounting option</li>
               </ul>
-              <p>Reporting these sales will help us to properly calculate your reporting period threshold amount.</p>
+              <!--<p>Reporting these sales will help us to properly calculate your reporting period threshold amount.</p>--> 
             </div>
             <!-- End of PSL26365 -->
-            <h2 class="h3">Security, privacy, and non-responsibility</h2>
+            <h2 class="h4">Security, privacy, and non-responsibility</h2>
             <p>Read the CRA's statements on <a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/file-a-gst-hst-return-rebate-election-electronically.html#h_4" rel="noopener noreferrer" target="_blank">Security, privacy, and non-responsibility</a> for GST/HST electronic services.</p>
-            <h2 class="h3">Confirmation of Receipt</h2>
+            <h2 class="h4">Confirmation of Receipt</h2>
             <p class="mrgn-bttm-lg">After you successfully submit your return and any applicable rebates, you will receive a <strong>confirmation number</strong>.</p>
             <div id="buttonsLine"> <a class="btn btn-default" href="https://chpjtp.axshare.com/a-mba-08_eng.html" role="button">Previous</a>
               <input name="button" type="submit" class="btn btn-primary" value="Next" />
