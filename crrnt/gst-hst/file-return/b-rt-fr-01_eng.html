@@ -169,7 +169,8 @@
     
 <form name="navURL" action="b-rt-fr-08_eng.html" method="get" id="gsthstnetfileform">
                             <fieldset>
-                            <legend class="mrgn-tp-0 mrgn-lft-0">Select or enter your reporting period dates: &nbsp;<a href="#reportperiod-popup" aria-controls="reportperiod-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a></legend>
+                            <div class="nowrap">
+                            <legend style="width: max-content" class="mrgn-tp-0 mrgn-lft-0">Select or enter your reporting period dates: &nbsp;<a href="#reportperiod-popup" aria-controls="reportperiod-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a></legend>
                             <div class="clearfix"></div>
                                 <div class="form-group mrgn-lft-md">
                                     <label for="startdate" class="required"><span class="field-name">From</span><strong class="required" aria-hidden="true">&nbsp;(required)</strong></label>
@@ -180,10 +181,10 @@
                                     <input id="enddate" class="form-control input-sm" name="enddate" type="date" data-rule-dateISO="true" required="required"/>
                                 </div>
                             </fieldset>
-                            <div class="form-group mrgn-tp-lg">
-                                <legend>
-                                    Select a situation, if it applies:&nbsp;<a href="#situation-popup" aria-controls="situation-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
-                                </legend>
+                            <fieldset class="chkbxrdio-grp mrgn-tp-lg">
+                                <div class="nowrap">
+                                    <legend style="width: max-content">Select a situation, if it applies:</legend>&nbsp;<a href="#situation-popup" aria-controls="situation-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
+                                </div>
                               	<ul class="list-unstyled">
                                 		<li class="checkbox">
                                         <label for="label.filingBti">
@@ -193,19 +194,18 @@
                                     <li class="checkbox">
                                         <label for="label.filingRitc" class="mrgn-right-md">
                                             <input type="checkbox" name="group1" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="label.filingRitc" />I want to provide additional details on types of sales (used to determine reporting periods):
-                                            <ul>
+                                            <ul style="list-style-type: circle;">
                                                 <li>Includes exempt supplies, zero-rated exports, goodwill, financial services, capital real property, or your associates’ taxable sales</li>
                                                 <li>Do not check this box if you use the quick method of accounting option</li>
                                             </ul>
                                         </label>
                                     </li>
                                 </ul>
-                            </div>
-
-                            <div class="form-group mrgn-tp-lg">
-                                <legend>
-                                    Select the rebates you want to file with your return:&nbsp;<a href="#form1-popup" aria-controls="form1-popup" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
-                                </legend>
+                            </fieldset>
+                            <fieldset class="chkbxrdio-grp mrgn-tp-lg">
+                                <div class="nowrap">
+                                    <legend style="width: max-content">Select the rebates you want to file with your return:</legend>&nbsp;<a href="#form1-popup" aria-controls="form1-popup" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
+                                </div>
                               	<ul class="list-unstyled">
                                 		<li class="checkbox">
                                         <label for="label.group2-1" class="mrgn-rght-md">
@@ -233,13 +233,11 @@
                                         </label>
                                     </li>
                                 </ul>
-                            </div>
-
-
-                            <div class="form-group mrgn-tp-lg">
-                                <legend>
-                                    Select the schedules you want to file with your return:&nbsp;<a href="#schedule-popup" aria-controls="schedule-popup" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
-                                </legend>
+                            </fieldset>
+                            <fieldset class="chkbxrdio-grp mrgn-tp-lg">
+                                <div class="nowrap">
+                                    <legend style="width: max-content">Select the schedules you want to file with your return:</legend>&nbsp;<a href="#schedule-popup" aria-controls="schedule-popup" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
+                                </div>
                               	<ul class="list-unstyled">
                                 		<li class="checkbox">
                                         <label for="label.group3-1" class="mrgn-rght-md">
@@ -257,8 +255,7 @@
                                         </label>
                                     </li>
                                 </ul>
-                            </div>
-
+                            </fieldset>
                             <br>
 
                             <div id="buttonsLine">
