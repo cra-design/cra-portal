@@ -170,19 +170,24 @@
                 <!--<p class="mrgn-bttm-lg">To make use of certain tax and reporting options, you must file an election.<br>
                     Selected Listed Financial Institutions (SLFI) must use specific forms intended for GST/HST and QST purposes.</p>-->
                 <!--<legend for="slfichoice"> <span class="field-name">Select the Selected Listed Financial Institutions (SLFI) group</span>:</legend>-->
-                <legend for="slfichoice"> <span class="field-name mrgn-rght-sm">Select the group of elections you want listed in the next form field:</span><a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account/file-election.html#slct_frm_mdl" target="helpWindow" title="Help - Opens in a new window"><span class="glyphicon glyphicon-question-sign"></span></a></legend>
-                <div id="slfiradio">
-                  <div class="radio mrn-bttm-md">
-                    <label for="nonslfi">
-                      <input id="nonslfi" type="radio" name="slfichoice" value="1" checked="checked" data-rule-required="true">
-                      View elections for businesses that are not <abbr title="Selected Listed Financial Institutions">SLFIs</abbr> (most businesses)</label>
+                  <div class="nowrap">
+                      <legend style="width: max-content;" for="slfichoice"> <span class="field-name mrgn-rght-sm">Select the group of elections you want listed in the next form field:</span></legend>&nbsp;<a href="#webform-popup" aria-controls="situation-popup" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
                   </div>
-                  <div class="radio mrn-bttm-md">
-                    <label for="slfi">
-                      <input id="slfi" type="radio" name="slfichoice" value="0" data-rule-required="true">
-                      View elections for <abbr title="Selected Listed Financial Institutions">SLFIs</abbr></label>
+                  <div class="clearfix"></div>
+                  <div id="slfiradio">
+                      <div class="radio mrn-bttm-md">
+                          <label for="nonslfi">
+                              <input id="nonslfi" type="radio" name="slfichoice" value="1" checked="checked" data-rule-required="true">
+                              View elections for businesses that are not <abbr title="Selected Listed Financial Institutions">SLFIs</abbr> (most businesses)
+                          </label>
+                      </div>
+                      <div class="radio mrn-bttm-md">
+                          <label for="slfi">
+                              <input id="slfi" type="radio" name="slfichoice" value="0" data-rule-required="true">
+                              View elections for <abbr title="Selected Listed Financial Institutions">SLFIs</abbr>
+                          </label>
+                      </div>
                   </div>
-                </div>
               </fieldset>
               <br>
               <fieldset class="chkbxrdio-grp">
@@ -264,6 +269,14 @@
           </div>
         </div>
         <br>
+<section id="webform-popup" class="wb-overlay modal-content overlay-def wb-popup-mid">
+	<header class="modal-header">
+		<h2 class="modal-title">Web forms</h2>
+	</header>
+	<div class="modal-body">
+		<div data-ajax-replace="https://cra-design.github.io/cra-portal/help/file-election.html#slct_frm_mdl"></div>
+	</div>
+</section>                    
         <dl class="dl-inline brdr-0">
           <dt>Screen ID:&nbsp;</dt>
           <dd> B-RT-SP-01 </dd>
