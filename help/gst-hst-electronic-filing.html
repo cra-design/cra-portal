@@ -49,17 +49,18 @@
     <nav role="navigation" class="gc-toc" aria-label="On this page">
       <h2 class="h3">On this page</h2>
       <ul>
-        <li><a href="#toc0">Selecting options for your return</a></li>
-        <li><a href="#toc1">Public service bodies' rebate</a></li>
-        <li><a href="#bct">Schedule A &ndash; BC transition tax and BC transition rebate</a></li>
+        <li><a href="#toc0">Information you need to file</a></li>
+        <li><a href="#toc1">Selecting options for your return</a></li>
+        <li><a href="#toc2">Public service bodies' rebate</a></li>
+        <li><a href="#bct">Schedule A &ndash; Grandparented housing</a></li>
         <li><a href="#toc3">Schedule B</a></li>
         <li><a href="#toc4">Schedule C</a></li>
-        <li><a href="#toc5">GST34 return</a></li>
-        <li><a href="#toc6">QST return</a></li>
+        <li><a href="#toc5">GST34 return lines</a></li>
+        <li><a href="#toc6">RC7200 (GST and QST) return lines</a></li>
       </ul>
     </nav>
     <div class="mwsbodytext text parbase section">
-      <h2 id="toc0">Selecting options for your return</h2>
+      <h2 id="toc0">Information you need to file</h2>
     </div>
     <div class="mwsbodytext text parbase section">
       <h3 id="bn">Business Number</h3>
@@ -82,7 +83,69 @@
     <div class="mwsbodytext text parbase section">
       <h3 id="cd">Access code</h3>
       <p>Enter your four-digit access code. If you have misplaced your access code, go to <a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/gst-hst-netfile/need-access-code.html">Need an access code?</a></p>
-      <p>If you have never received an access code, call us at <span class="nowrap">1-800-959-5525</span> and we will give you one. If you are calling from outside Canada and the United States, call us collect at <span class="nowrap">613-940-8497</span>.</p>
+      
+      <!-- Parissa to : Ajax this section in later -->
+      
+      <p>If you lost or forgot your GST/HST access code or if you never received it, there are 3&nbsp;ways to get or change it:</p>
+      <dl class="dl-horizontal">
+        <dt><a href="#account">CRA Account</a></dt>
+        <dd>
+          <p>Sign in to your CRA account to get your access code in your business account.</p>
+          <p>Representatives who are accessing your account though their representative account <strong>will not see your access code</strong>, regardless of their authorization level.</p>
+        </dd>
+        <dt><a href="#online">Online form</a></dt>
+        <dd>If you have previously filed a GST/HST return, use the online form to <strong>get or change</strong> your access code.</dd>
+        <dt><a href="#phone">By phone</a></dt>
+        <dd>If you cannot sign in to your CRA account or use the online form, call us to <strong>get or change</strong> your access code.</dd>
+      </dl>
+      <div class="wb-tabs mrgn-tp-lg">
+        <div class="tabpanels">
+          <details id="tab1" class="provisional wb-details-close">
+            <summary><span class="fas fa-unlock"></span>&nbsp;CRA Account</summary>
+            <div id="account" class="mrgn-tp-md">
+              <ol class="lst-stps ld-zr">
+                <li><a href="https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services.html">Sign in to your CRA account</a></li>
+                <li>Select your <strong>Business</strong> account</li>
+                <li>Select <strong>GST/HST</strong> and your RT number</li>
+                <li>On the GST/HST account overview page, select the <strong>View return details</strong> button</li>
+              </ol>
+            </div>
+          </details>
+          <details id="tab2" class="provisional wb-details-close">
+            <summary><span class="fas fa-desktop"></span>&nbsp;Online form</summary>
+            <div id="online" class="mrgn-tp-md">
+              <ol class="lst-stps ld-zr">
+                <li>Visit <a href="https://apps.cra-arc.gc.ca/ebci/ghnf/netf/prot/ntrAccssCdGft.action?request_locale=en_CA">GST/HST access code online</a></li>
+                <li>Enter your business number</li>
+                <li>Enter information from a return you filed for a reporting period ending within the last 3 years, either:
+                  <ul>
+                    <li>The reporting period <strong>and</strong> line 109 (net tax), if the amount on line 109 is not $0.00</li>
+                    <li>The reporting period <strong>and</strong> confirmation number, if you filed the return electronically</li>
+                  </ul>
+                </li>
+                <li>Enter the new access code you want</li>
+                <li>Use your new access code to file all future GST/HST returns</li>
+              </ol>
+            </div>
+          </details>
+          <details id="tab3">
+            <summary><span class="fas fa-phone"></span>&nbsp;By phone</summary>
+            <div id="phone" class="mrgn-tp-md">
+              <p>If you cannot sign in to your CRA account or use the online form, call us:</p>
+              <ul>
+                <li>In Canada or the United States: <span class="nowrap"><strong>1-800-959-5525</strong></span></li>
+                <li>In Yukon, Northwest Territories or Nunavut only: <span class="nowrap">1-866-841-1876</span></li>
+                <li><strong>Outside</strong> Canada or the United States, call us collect: <span class="nowrap">613-940-8497</span></li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+      
+      <!-- End of section to Ajax --> 
+    </div>
+    <div class="mwsbodytext text parbase section">
+      <h2 id="toc1">Selecting options for your return</h2>
     </div>
     <div id="gstform">
       <h3 id="fn1">Ontario First Nations Point-of-Sale Relief (GST189)</h3>
@@ -146,7 +209,7 @@
       <p>Enter the total amount claimed for Ontario First Nations point-of-sale relief credited on your off-reserve supplies of qualifying property or services.</p>
     </div>
     <div class="mwsbodytext text parbase section">
-      <h2 id="toc1">Public service bodies' rebate</h2>
+      <h2 id="toc2">Public service bodies' rebate</h2>
     </div>
     <div class="mwsbodytext text parbase section">
       <h3 id="l305">Line 305 - Charity or public institution</h3>
@@ -199,30 +262,7 @@
       <p>Respond "no" if you do not want to include the rebate amount (line 409) from your public service bodies' rebate application on line 111 of your GST/HST return.</p>
     </div>
     <div class="mwsbodytext text parbase section">
-      <h2 id="bct">Schedule A &ndash; BC transition tax and BC transition rebate</h2>
-    </div>
-    <div class="mwsbodytext text parbase section">
-      <p>The BC transition tax will generally apply to a builder's taxable sale of new housing or an interest in the housing, or a self-supply of new housing, where:</p>
-      <ul>
-        <li>GST becomes payable on or after April 1, 2013 (as such, the HST does not apply) and before April 1, 2015, and</li>
-        <li>The construction or substantial renovation of the new housing is 10% or more completed before April 1, 2013.</li>
-      </ul>
-      <p>Where the BC transition tax is payable, the builder of the housing may be eligible for a BC transition rebate if the construction or substantial renovation of the housing is at least 10% completed before April 1, 2013 and not more than 90% completed as of that date. For information on the B.C. transition tax and BC transition rebate, refer to GST/HST Notice No. 276, Elimination of the HST in British Columbia in 2013 - Transitional Rules for Real Property Including New Housing.</p>
-    </div>
-    <div class="mwsbodytext text parbase section">
-      <h3>Line 705 - BC transition tax</h3>
-      <p>Enter the 2% BC transition tax that became payable by the purchaser (or, in the case of a grandparented sale, the transition tax that was considered to have been paid by the purchaser and for which you must account) in this reporting period for your sale of newly constructed or substantially renovated housing in BC or an interest in such housing.</p>
-      <p>Also enter the amount of any 2% BC transition tax that you have to account for in this reporting period for a self-supply (or supplies) of newly constructed or substantially renovated housing in BC. Do not report GST or HST amounts in this field.</p>
-      <p>This field only applies if the reporting period start date of your return is before April 1, 2015.</p>
-      <p>For more information, refer to GST/HST Notice No. 276, Elimination of the HST in British Columbia in 2013 - Transitional Rules for Real Property Including New Housing.</p>
-    </div>
-    <div class="mwsbodytext text parbase section">
-      <h3>Line 122 - BC transition rebate</h3>
-      <p>Enter the total amount of the BC transition rebate(s) you are claiming for this reporting period. A BC transition rebate is not available before the 2% BC transition tax has become payable for the sale (including the sale of an interest) or self-supply of the newly constructed or substantially renovated housing to which the rebate applies. The BC transition rebate application form must be mailed separately to CRA.</p>
-      <p>For more information, refer to GST/HST Notice No. 276, Elimination of the HST in British Columbia in 2013 - Transitional Rules for Real Property Including New Housing.</p>
-    </div>
-    <div class="mwsbodytext text parbase section">
-      <h3 id="grdn">Grandparented housing</h3>
+      <h2 id="bct">Schedule A &ndash; Grandparented housing</h2>
     </div>
     <div class="mwsbodytext text parbase section">
       <h3>Line 1100 - Total sales</h3>
@@ -337,7 +377,7 @@
       <p>If line 116, Total adjustment to net tax exceeds the amount available in line 108, Total ITCs and adjustments (before RITC reconciliation), the excess amount will be added to line 105, Total GST/HST and adjustments for period (after RITC reconciliation).</p>
     </div>
     <div class="mwsbodytext text parbase section">
-      <h2 id="toc5">GST34 return</h2>
+      <h2 id="toc5">GST34 return lines</h2>
     </div>
     <div class="mwsbodytext text parbase section">
       <h3 id="l90">Line 90 &nbsp;- Taxable sales made in Canada</h3>
