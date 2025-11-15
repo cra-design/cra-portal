@@ -160,8 +160,9 @@
             <dd class="p-0">123456789RT0001</dd>
           </dl>
           <br>
-          <h3 class="h3">GST/HST access code: 1234</h3>
-          <h2 class="h2">Expected returns</h2>
+          <h2 class="h4">Access code</h2>
+          <p>GST/HST access code is: 1234</p>
+          <h2 class="h4">Expected returns &nbsp;<a href="#xpctd_rtrns_mdl" aria-controls="xpctd_rtrns_mdl" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a></h2>
           <table class="table table-hover table-bordered table-condensed" summary="Expected returns">
             <colgroup>
             <col style="width:30%">
@@ -198,7 +199,7 @@
         </tr>-->
             </tbody>
           </table>
-          <h2 class="h2">Filed returns</h2>
+          <h2 class="h4">Filed returns</h2>
           <p>Select the return you want to view by clicking on the link in the Reporting period column below.</p>
           <table class="table table-hover table-bordered table-condensed" summary="Filed returns">
             <colgroup>
@@ -251,6 +252,22 @@
           <div class="mrgn-tp-lg"> <a class="btn btn-primary" data href="https://chpjtp.axshare.com/a-mba-08_eng.html"> Previous</a> <a class="btn btn-default"> Print</a> </div>
         </form>
       </div>
+      <section id="xpctd_rtrns_mdl" class="mfp-hide modal-dialog modal-content overlay-def">
+        <header class="modal-header">
+          <h2 class="modal-title">Expected returns</h2>
+        </header>
+        <div class="modal-body">
+          <div data-ajax-replace="https://cra-design.github.io/cra-portal/help/view-expected-filed-returns.html#xpctd_rtrns_cntnt"></div>
+        </div>
+      </section>
+      <section id="fld_rtrns_mdl" class="mfp-hide modal-dialog modal-content overlay-def">
+        <header class="modal-header">
+          <h2 class="modal-title">Expected returns</h2>
+        </header>
+        <div class="modal-body">
+          <div data-ajax-replace="https://cra-design.github.io/cra-portal/help/view-expected-filed-returns.html#fld_rtrns_cntnt"></div>
+        </div>
+      </section>
       <br>
       <dl class="dl-inline brdr-0">
         <dt>Screen ID:&nbsp;</dt>
@@ -345,11 +362,11 @@
 */
     </script> 
 <script>
-                                    $("#form2").submit(function(e) { 
-                                        $(".wb-frmvld").trigger("wb-init.wb-frmvld");
-                                        e.preventDefault(); // Cancel the submit
-                                        return false;
-                                    });
-                                </script>
+    $("#form2").submit(function(e) { 
+    $(".wb-frmvld").trigger("wb-init.wb-frmvld");
+    e.preventDefault(); // Cancel the submit
+    return false;
+    });
+  </script>
 </body>
 </html>
