@@ -151,8 +151,9 @@ view-expected-filed-returns
 Help files
 
 - https://cra-design.github.io/cra-portal/help/about-enquiries-service.html
-- https://cra-design.github.io/cra-portal/help/answers-common-questions-goods-services-tax-harmonized-sales-tax-accounts.html
+- https://cra-design.github.io/cra-portal/help/about-your-profile.html
 - https://cra-design.github.io/cra-portal/help/adjust-a-return.html
+- https://cra-design.github.io/cra-portal/help/answers-common-questions-goods-services-tax-harmonized-sales-tax-accounts.html
 - https://cra-design.github.io/cra-portal/help/electronic-rebate-forms.html
 - https://cra-design.github.io/cra-portal/help/file-a-return.html
 - https://cra-design.github.io/cra-portal/help/file-election.html
