@@ -75,16 +75,11 @@
       "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/gst-hst-netfile/gst-hst-netfile-about-gst-hst-netfile.html", 
       "destination": "https://cra-design.github.io/gst-hst-business/en/topics/gst-hst-businesses/file-return/how-file.html"
     }, 
+    
     {
       "origin": "https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/after-you-file.html", 
       "destination": "https://cra-design.github.io/cra-portal/t1portal/after-you-file.html"
     }, 
-
-   {
-      "origin": "https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/after-you-file.html", 
-      "destination": "https://cra-design.github.io/cra-portal/t1portal/get-ready-taxes.html"
-    }, 
-    
     {
       "origin": "https://cra-design.github.io/content/canadasite/en/revenue-agency/services/e-services/digital-services-businesses/refile-online-t1-adjustments-efile-service-providers.html", 
       "destination": "https://cra-design.github.io/cra-portal/t1portal/change-return.html"
@@ -100,13 +95,11 @@
     {
       "origin": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals/change-return.html", 
       "destination": "https://cra-design.github.io/cra-portal/t1portal/change-return-services.html"
-    },
-
+    }, 
     {
      "origin": "https://www.canada.ca/content/canadasite/en/revenue-agency/services/e-services/digital-services-businesses/refile-online-t1-adjustments-efile-service-providers.html", 
       "destination": "https://cra-design.github.io/cra-portal/t1portal/change-return.html"
     }, 
-    
     {
       "origin": "https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/how-file/tax-software/complete-return.html", 
       "destination": "https://cra-design.github.io/cra-portal/t1portal/complete-return.html"
