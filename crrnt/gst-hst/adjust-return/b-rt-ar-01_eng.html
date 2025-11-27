@@ -161,87 +161,83 @@
           </dl>
         </div>
         <div class="wb-frmvld">
-          <p>Only returns that are eligible for electronic adjustment will appear below. &nbsp;<a href="#noadjust-popup" aria-controls="situation-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a></p>
+          <!--<p>Only returns that are eligible for electronic adjustment will appear below. &nbsp;<a href="#noadjust-popup" aria-controls="situation-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a></p>-->
           <form name="adjust_return" id="adjust_return" action="b-rt-ar-08_eng.html" method="get">
             <!-- Available dates -->
             <fieldset>
-            <div class="form-group">
-              <label for="dateSelected" class="required"><span class="field-name">Select the period end date of the return you want to adjust:</span> <strong class="required" aria-hidden="true">&nbsp;(required)</strong></label>
-              <select id="dateSelected" name="eligibilityDTO.selectedEligibleEndDate" class="form-control mrgn-tp-sm" required="required">
-                <option value="">Select</option>
-                <option value="2025-03-31">2025-03-31</option>
-                <option value="2024-12-31">2024-12-31</option>
-                <option value="2024-09-30">2024-09-30</option>
-                <option value="2024-03-31">2024-03-31</option>
-              </select>
-            </div>
+              <div class="form-group">
+                <label for="dateSelected" class="required"><span class="field-name">Select the period end date of the return you want to adjust:</span> <strong class="required" aria-hidden="true">&nbsp;(required)</strong></label>
+                <select id="dateSelected" name="eligibilityDTO.selectedEligibleEndDate" class="form-control mrgn-tp-sm" required="required">
+                  <option value="">Select</option>
+                  <option value="2025-03-31">2025-03-31</option>
+                  <option value="2024-12-31">2024-12-31</option>
+                  <option value="2024-09-30">2024-09-30</option>
+                  <option value="2024-03-31">2024-03-31</option>
+                </select>
+              </div>
             </fieldset>
+          <p class="lead">The return I want to adjust is not listed.&nbsp;<a href="#noadjust-popup" aria-controls="situation-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign"></span></a></p>
             <fieldset class="chkbxrdio-grp mrgn-bttm-sm mrgn-tp-md">
-                <div class="nowrap">
-                    <legend style="width: max-content" class=""> <span class="field-name">Select reporting options that apply to your adjustment</span>:</legend>&nbsp;<a href="#adjustoptions-popup" aria-controls="form1-popup" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-question-sign"></span></a>
-                </div>
-               	<ul class="list-unstyled">
-                 	  <li class="checkbox">
-                        <label for="filed_default">
-                            <input type="checkbox" name="option1" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="filed_default" checked="checked" />
-                            I want to adjust amounts reported in my original return (default)
-                        </label>
-                    </li>
-                    <li class="checkbox">
-                        <label for="schedb">
-                            <input type="checkbox" name="option2" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="schedb" />
-                            I want to add a Schedule B (Recaptured input tax credits) that was not included in the original return
-                        </label>
-                    </li>
-                    <li class="checkbox">
-                        <label for="reportTypeOfSales">
-                            <input type="checkbox" name="option3" value="/cra-portal/exit.html?uri=b-rt-ar-08_eng.html" id="reportTypeOfSales" />
-                            I want to provide additional details on types of sales (used to determine reporting periods):
-                        </label>
-                        <ul style="list-style-type: disc;" class="mrgn-lft-md">
-                            <li>Includes exempt supplies, zero-rated exports, goodwill, financial services, capital real property, or your associates’ taxable sales</li>
-                            <li>Do not check this box if you use the quick method of accounting option</li>
-                        </ul>
-                <!--<p>Reporting these sales will help us to properly calculate your reporting period threshold amount.</p>--> 
-                    </li>
-                </ul>
+              <div class="nowrap">
+                <legend style="width: max-content" class=""> <span class="field-name">Select reporting options that apply to your adjustment</span>:</legend>
+                &nbsp;<a href="#adjustoptions-popup" aria-controls="form1-popup" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-question-sign"></span></a> </div>
+              <ul class="list-unstyled">
+                <li class="checkbox">
+                  <label for="filed_default">
+                    <input type="checkbox" name="option1" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="filed_default" checked="checked" />
+                    I want to adjust amounts reported in my original return (default) </label>
+                </li>
+                <li class="checkbox">
+                  <label for="schedb">
+                    <input type="checkbox" name="option2" value="/cra-portal/exit.html?uri=b-rt-ar-06_eng.html" id="schedb" />
+                    I want to add a Schedule B (Recaptured input tax credits) that was not included in the original return </label>
+                </li>
+                <li class="checkbox">
+                  <label for="reportTypeOfSales">
+                    <input type="checkbox" name="option3" value="/cra-portal/exit.html?uri=b-rt-ar-08_eng.html" id="reportTypeOfSales" />
+                    I want to provide additional details on types of sales (used to determine reporting periods): </label>
+                  <ul style="list-style-type: disc;" class="mrgn-lft-md">
+                    <li>Includes exempt supplies, zero-rated exports, goodwill, financial services, capital real property, or your associates’ taxable sales</li>
+                    <li>Do not check this box if you use the quick method of accounting option</li>
+                  </ul>
+                  <!--<p>Reporting these sales will help us to properly calculate your reporting period threshold amount.</p>--> 
+                </li>
+              </ul>
             </fieldset>
             <!-- End of PSL26365 -->
             <h2 class="h4">Security, privacy, and non-responsibility</h2>
-              <p>Read the CRA's <a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/file-a-gst-hst-return-rebate-election-electronically.html#h_4" rel="noopener noreferrer" target="_blank">disclaimers on security, privacy, and non-responsibility</a> for GST/HST electronic services.</p>
+            <p>Read the CRA's <a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/file-a-gst-hst-return-rebate-election-electronically.html#h_4" rel="noopener noreferrer" target="_blank">disclaimers on security, privacy, and non-responsibility</a> for GST/HST electronic services.</p>
             <h2 class="h4">Confirmation of receipt</h2>
             <p class="mrgn-bttm-lg">After you successfully submit your return and any applicable rebates, you will receive a <strong>confirmation number</strong>.</p>
-            <div id="buttonsLine"> 
-                <a class="btn btn-default" href="https://chpjtp.axshare.com/a-mba-08_eng.html" role="button">Previous</a>
-                <input name="button" type="submit" class="btn btn-primary" value="Next" />
+            <div id="buttonsLine"> <a class="btn btn-default" href="https://chpjtp.axshare.com/a-mba-08_eng.html" role="button">Previous</a>
+              <input name="button" type="submit" class="btn btn-primary" value="Next" />
             </div>
           </form>
           <p class="mrgn-tp-md">Note that this service cannot be used to resolve a formal dispute. If you want to file a Notice of Objection you must complete Form GST159, <cite>Notice of Objection (GST/HST)</cite>.</p>
         </div>
       </div>
       <br>
-<section id="noadjust-popup" class="mfp-hide modal-dialog modal-content overlay-def">
-	<header class="modal-header">
-		<h2 class="modal-title">Returns you cannot adjust</h2>
-	</header>
-	<div class="modal-body">
-		<div data-ajax-replace="https://cra-design.github.io/cra-portal/help//adjust-a-return.html#lgblty_cntnt"></div>
-	</div>
-</section>
-<section id="adjustoptions-popup" class="wb-overlay modal-content overlay-def wb-popup-mid">
-	<header class="modal-header">
-		<h2 class="modal-title">Adjustment options</h2>
-	</header>
-	<div class="modal-body">
-    <h3>Adding a schedule</h3>
-		<div data-ajax-replace="https://cra-design.github.io/cra-portal/help/adjust-a-return.html#ddsc_cntnt"></div>
-		<h3>Sales and other revenue</h3>
-    <div data-ajax-replace="https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#sls_cntnt"></div>
-    <h4>Associate</h4>
-    <div data-ajax-replace="https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#ssct-mdl-cntnt"></div>
-	</div>
-</section>
-
+      <section id="noadjust-popup" class="mfp-hide modal-dialog modal-content overlay-def">
+        <header class="modal-header">
+          <h2 class="modal-title">Returns you cannot adjust</h2>
+        </header>
+        <div class="modal-body">
+          <div data-ajax-replace="https://cra-design.github.io/cra-portal/help//adjust-a-return.html#lgblty_cntnt"></div>
+        </div>
+      </section>
+      <section id="adjustoptions-popup" class="wb-overlay modal-content overlay-def wb-popup-mid">
+        <header class="modal-header">
+          <h2 class="modal-title">Adjustment options</h2>
+        </header>
+        <div class="modal-body">
+          <h3>Adding a schedule</h3>
+          <div data-ajax-replace="https://cra-design.github.io/cra-portal/help/adjust-a-return.html#ddsc_cntnt"></div>
+          <h3>Sales and other revenue</h3>
+          <div data-ajax-replace="https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#sls_cntnt"></div>
+          <h4>Associate</h4>
+          <div data-ajax-replace="https://cra-design.github.io/cra-portal/help/gst-hst-electronic-filing.html#ssct-mdl-cntnt"></div>
+        </div>
+      </section>
       <dl class="dl-inline brdr-0">
         <dt>Screen ID:&nbsp;</dt>
         <dd> B-RT-AR-01 </dd>
