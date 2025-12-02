@@ -5757,7 +5757,9 @@
 
     .quartz-list.quartz-list-description.quartz-list-horizontal dt {
         width: calc(50% - 25px);
+/*
         padding-right: 25px
+*/
     }
 
     .quartz-list.quartz-list-description.quartz-list-horizontal dt:first-of-type {
