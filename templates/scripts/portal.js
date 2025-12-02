@@ -132,7 +132,7 @@ var anchorUri,
                     sideNavContain.classList.remove("mat-drawer-transition");
                     sideNav.classList.add("mat-drawer-side");
                     sideNav.classList.remove("mat-drawer-over");
-                    if (sideNavContent.style.getPropertyPriority("marginLeft") !== "important") {
+                    if (sideNavContent.style.getPropertyPriority("margin-left") !== "important") {
                         sideNavContent.style.marginLeft = "280px";
                     }
                     ribbonTitle.classList.remove("quartz-invisible");
