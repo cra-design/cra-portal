@@ -132,7 +132,9 @@ var anchorUri,
                     sideNavContain.classList.remove("mat-drawer-transition");
                     sideNav.classList.add("mat-drawer-side");
                     sideNav.classList.remove("mat-drawer-over");
-                    sideNavContent.style.marginLeft = "280px";
+                    if (sideNavContent.style.getPropertyPriority("marginLeft") !== "important") {
+                        sideNavContent.style.marginLeft = "280px";
+                    }
                     ribbonTitle.classList.remove("quartz-invisible");
                     ribbonSubTitle.classList.remove("quartz-invisible");
                     footEl.classList.remove("column-count-one");
