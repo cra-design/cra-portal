@@ -296,7 +296,7 @@ for (let i = 0; i < navLink.length; i++) {
     }
 }
 
-if (contentSection[0].getElementsByTagName("mat-expansion-panel").length !== 0) {
+if (typeof contentSection[0] !== "undefined" && contentSection[0].getElementsByTagName("mat-expansion-panel").length !== 0) {
     accordions = contentSection[0].getElementsByTagName("mat-expansion-panel");
 }
 
