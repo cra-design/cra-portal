@@ -300,7 +300,7 @@ if (typeof contentSection[0] !== "undefined" && contentSection[0].getElementsByT
     accordions = contentSection[0].getElementsByTagName("mat-expansion-panel");
 }
 
-if (accordions !== null) {
+if (typeof accordions !== "undefined") {
     for (let i = 0; i < accordions.length; i++) {
         expandHideBtn = accordions[i].getElementsByTagName("mat-panel-title");
         expandHideBtn[0].addEventListener("click", accordionActivate, false);
