@@ -3,10 +3,10 @@
 var anchorUri,
     anchorEl,
     expandHideBtn,
+    accordions, 
     quartzSideNav = document.getElementsByTagName("quartz-sidenav"),
     navLink = quartzSideNav[0].getElementsByTagName("a"),
     contentSection = document.getElementsByTagName("mat-drawer-content"),
-    accordions = contentSection[0].getElementsByTagName("mat-expansion-panel"),
     sideNav = document.querySelector("mat-sidenav"),
     accountBtn = document.querySelector(".quartz-primary-button"),
     sdMenuBtn = document.getElementsByTagName("quartz-icon-button"),
@@ -296,9 +296,15 @@ for (let i = 0; i < navLink.length; i++) {
     }
 }
 
-for (let i = 0; i < accordions.length; i++) {
-    expandHideBtn = accordions[i].getElementsByTagName("mat-panel-title");
-    expandHideBtn[0].addEventListener("click", accordionActivate, false);
+if (contentSection[0].getElementsByTagName("mat-expansion-panel").length !== 0) {
+    accordions = contentSection[0].getElementsByTagName("mat-expansion-panel");
+}
+
+if (accordions !== null) {
+    for (let i = 0; i < accordions.length; i++) {
+        expandHideBtn = accordions[i].getElementsByTagName("mat-panel-title");
+        expandHideBtn[0].addEventListener("click", accordionActivate, false);
+    }
 }
 
 for (let i = 0; i < tabs.length; i++) {
