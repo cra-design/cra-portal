@@ -144,7 +144,9 @@ var anchorUri,
                     showHideMenu(true);
                 } else {
                     // small screen UI adjustments
-                    sideMenuIcon.classList.remove("quartz-invisible");
+                    if (sideNav.classList.contains("mat-drawer-no-nav") === false) {
+                        sideMenuIcon.classList.remove("quartz-invisible");
+                    }
                     sideNavContain.classList.add("mat-drawer-transition");
                     sideNav.classList.add("mat-drawer-over");
                     sideNav.classList.remove("mat-drawer-side");
@@ -164,7 +166,7 @@ var anchorUri,
         }
         if (window.innerWidth < 960) {
             showHideNav(false);
-            if (sideNav.classList.contains("mat-drawer-opened") === true) {
+            if (sideNav.classList.contains("mat-drawer-opened") === true && sideNav.classList.contains("mat-drawer-no-nav") === false) {
                 backdropEl.classList.add("mat-drawer-shown");
                 backdropEl.addEventListener("click", hideSideNav, false);
             }
@@ -316,8 +318,10 @@ for (let i = 0; i < dialogs.length; i++) {
 }
 
 sideMenuBtn[0].addEventListener("click", showHideMenu, false);
-sideNav.classList.add("mat-drawer-opened");
-showHideMenu(true);
+if (sideNav.classList.contains("mat-drawer-no-nav") === false) {
+    sideNav.classList.add("mat-drawer-opened");
+    showHideMenu(true);
+}
 
 if (accountBtn !== null) {
     accountBtn.addEventListener("click", showLoginMenu, false);
