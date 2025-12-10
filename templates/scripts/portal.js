@@ -255,7 +255,6 @@ var anchorUri,
         if (this.type === "submit" && this.formTarget !== "") {
             window.open(this.value, this.formTarget);
         } else {
-            window.open(this.value);
             window.location.href = this.value;
         }
     },
