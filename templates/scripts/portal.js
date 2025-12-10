@@ -252,7 +252,12 @@ var anchorUri,
         }
     },
     gotoPage = function () {
-        window.location.href = this.value;
+        if (this.type === "submit" && this.formTarget !== "") {
+            window.open(this.value, this.formTarget);
+        } else {
+            window.open(this.value);
+            window.location.href = this.value;
+        }
     },
     openDialog = function () {
         let overlayWrap = this.popoverTargetElement.closest(".cdk-global-overlay-wrapper"),
