@@ -1,0 +1,42 @@
+---
+testBanner: false
+title: "Sitemap"
+dateModified: 2026-02-02
+dateIssued: 2026-02-02
+nositesearch: true
+nomenu: true
+breadcrumbs: false
+feedback: false
+share: false
+noFooterContextual: true
+noFooterCorporate: true
+noFooterMain: true
+---
+<!--
+<div class="mrgn-tp-md brdr-bttm">
+    <div class="row">
+        <ul class="toc lst-spcd col-md-12">
+            <li class="col-md-4 col-sm-6"><a class="list-group-item active" data-exit="false" href="https://github.com/cra-design/repository name/tree/main">GitHub repository</a></li>
+        </ul>
+    </div>
+</div>
+<ul>
+-->
+{% assign sitePages = site.pages | sort: "url" %}
+{% for p in sitePages %}
+    {% include sitemapxml.html url = p.url title = p.title %}
+    {% assign page_url = p.url | slice: 1, p.url.size %}
+    {% assign folder_path = page_url | split: "/" %}
+    {% if folder_path.size > 1 %}
+        <p>
+        {% for fp in folder_path %}
+            {% if forloop.last %}
+               &nbsp;{{ fp }}
+            {% else %}
+                [{{ fp }}]
+            {% endif %}
+        {% endfor %}
+        </p>
+    {% endif %}
+{% endfor %}
+</ul>
