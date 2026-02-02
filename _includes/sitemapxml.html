@@ -1,0 +1,9 @@
+{% assign file_path = include.url | slice: 1, -1 %}
+{% assign pagetitle = "" %}
+
+{% if file_path contains "/" %}
+  {% assign pagetitle = "" %}
+{% else %}
+  {% assign pagetitle = "/" | append: site.title %}
+{% endif %}
+<li><a data-exit="false" title="{{ site.url }}{{ pagetitle }}{{ include.url }}" href="{{ site.url }}{{ pagetitle }}{{ include.url }}">{{ include.title }}</a></li>
